@@ -32,7 +32,6 @@ class _LoginPageState extends State<LoginPage> {
         return 1;
       }
     }
-
     return 0;
   }
 

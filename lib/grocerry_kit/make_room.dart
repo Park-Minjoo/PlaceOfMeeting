@@ -58,13 +58,13 @@ class makeRoomPage extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 20, right: 20, top:5, bottom:5),
+                    padding: EdgeInsets.only(left: 25, right: 25, top:5, bottom:5),
                   ),
-                  category_items(),
+                  category_items_first_line(),
                   Padding(
                     padding: EdgeInsets.only(top:10, bottom:10),
                   ),
-                  category_items(),
+                  category_items_second_line(),
                 ],
               ),
             ),
@@ -280,10 +280,12 @@ class _radioButtonWidget extends State<radioButtonWidget> {
   
 }
 
-
-category_items(){
+category_items_first_line(){
   return Row(
       children: <Widget> [
+        Padding(
+            padding: EdgeInsets.only(left: 5, right: 5)
+        ),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
@@ -315,7 +317,116 @@ category_items(){
             ),
             Text("농구"),
           ],
-        )
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.sports_tennis),
+            ),
+            Text("테니스"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.sports_volleyball),
+            ),
+            Text("배구"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.computer),
+            ),
+            Text("컴퓨터"),
+          ],
+        ),
+
+      ]
+  );
+}
+
+category_items_second_line(){
+  return Row(
+      children: <Widget> [
+        Padding(
+          padding: EdgeInsets.only(left: 5, right: 5)
+        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.local_taxi),
+            ),
+            Text("택시"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.music_note),
+            ),
+            Text("음악"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.palette),
+            ),
+            Text("미술"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.sports_tennis),
+            ),
+            Text("테니스"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.people_alt),
+            ),
+            Text("친구"),
+          ],
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget> [
+            IconButton(
+              icon: Icon(Icons.edit_rounded),
+            ),
+            Text("공부"),
+          ],
+        ),
       ]
   );
 }

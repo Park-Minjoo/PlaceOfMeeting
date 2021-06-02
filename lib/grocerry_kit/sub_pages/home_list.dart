@@ -29,6 +29,9 @@ class HomeList extends StatelessWidget {
               ],
             ),
             _buildCategoryList(), // 리얼 카테고리 나열한 친구
+            SizedBox(
+              height: 50,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -41,6 +44,12 @@ class HomeList extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                ),
+                IconButton(
+                    onPressed: (){
+                      Navigator.pushNamed(context, '/grocerry/makeroom');
+                    },
+                    icon: Icon(Icons.add_circle_outlined)
                 ),
               ],
             ),
