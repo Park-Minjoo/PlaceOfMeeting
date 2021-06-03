@@ -13,12 +13,12 @@ class WelcomePage extends StatelessWidget {
               children: <Widget>[
                 Text(
                     'Place of Meeting',
-                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.w500, letterSpacing: 2.0, color: Colors.pinkAccent),
+                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.w500, letterSpacing: 2.0, color: Colors.green),
                 ),
                 Icon(
                     Icons.people_alt_outlined,
                     size: 50.0,
-                    color: Colors.pinkAccent,
+                    color: Colors.green,
                 ),
                 SizedBox(
                   height: 230,

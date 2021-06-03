@@ -10,7 +10,15 @@ class SignupPage extends StatefulWidget {
   }
 }
 
-
+enum Controller{
+      idController,
+      pwdController,
+      pwd2Controller,
+      nameController,
+      dateController,
+      emailController,
+      phoneController
+}
 
 class _SignupPageState extends State<SignupPage> {
   final idController = TextEditingController();
@@ -18,14 +26,12 @@ class _SignupPageState extends State<SignupPage> {
   final pwd2Controller = TextEditingController();
   final nameController = TextEditingController();
   final dateController = TextEditingController();
-  final genderController = TextEditingController();
   final emailController = TextEditingController();
   final phoneController = TextEditingController();
-  final _idform = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   final _item = ['Man', 'Woman'];
   var _selected = 'Man';
-  bool _validate = false;
-  int inc = 8;
+  bool _dupcheck = false;
 
   Future<int> checkdup(TextEditingController id) async {
     final conn = await MySqlConnection.connect(ConnectionSettings(
@@ -63,12 +69,22 @@ class _SignupPageState extends State<SignupPage> {
 
     var result = await conn.query(
          'insert into login_info values (?, ?, ?, ?, ?, ?, ?)',
-          [inc, gender=='Man'? 1 : 0, date.text, id.text, pwd.text, email.text, pnum.text]
+          [0, gender=='Man'? 1 : 0, date.text, id.text, pwd.text, email.text, pnum.text]
     );
-    print('Inserted row id=${result.insertId}');
 
-    inc++;
+    print('Inserted row id=${result.insertId}');
   }
+
+  String convert(int num){
+    if(num == 0) return 'ID';
+    else if(num == 1) return 'Passward';
+    else if(num == 2) return 'Passward Confirm';
+    else if(num == 3) return 'Date of Birth';
+    else if(num == 4) return 'Name';
+    else if(num == 5) return 'Email';
+    else if(num == 6) return 'Phone_num';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,8 +92,8 @@ class _SignupPageState extends State<SignupPage> {
           elevation: 0,
           backgroundColor: Colors.white,
         ),
-        body:
-        ListView(
+        body: ListView(
+          key: _formKey,
           children: <Widget>[
             Container(
               height: 850,
@@ -94,6 +110,7 @@ class _SignupPageState extends State<SignupPage> {
                       bottomLeft: Radius.circular(32),
                       bottomRight: Radius.circular(32))),
               alignment: Alignment.topCenter,
+
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -137,20 +154,11 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                     ),
                     Padding(
-                      padding:
-                      EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
+                      padding: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
                       child: TextFormField(
                         controller: idController,
-                        key: _idform,
                         style: TextStyle(fontSize: 18),
                         keyboardType: TextInputType.text,
-                        validator: (value){
-                          if(value.isEmpty){
-                            return 'Enter some text';
-                          }
-                          else
-                            return null;
-                        },
                         decoration: InputDecoration(
                           hintText: 'ID',
                           enabledBorder: OutlineInputBorder(
@@ -165,6 +173,7 @@ class _SignupPageState extends State<SignupPage> {
                                   var result;
                                   result = await checkdup(idController);
                                   if(result == 0){
+                                    _dupcheck = true;
                                     ScaffoldMessenger.of(context).showSnackBar(
                                         SnackBar(
                                           content: Text('사용가능한 ID입니다.'),
@@ -252,7 +261,7 @@ class _SignupPageState extends State<SignupPage> {
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
                           hintText: 'Name',
-                          errorText: _validate ? 'Value Can\'t Be Empty' : null,
+                         // errorText: _validate ? 'Value Can\'t Be Empty' : null,
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                               borderSide: BorderSide(color: Colors.grey)),
@@ -333,9 +342,44 @@ class _SignupPageState extends State<SignupPage> {
                               color: Colors.green, shape: BoxShape.circle),
                           child: IconButton (
                             color: Colors.white,
-                            onPressed: () {
-                              main(idController, pwdController, nameController, dateController,_selected, emailController, phoneController);
-                              Navigator.pushNamed(context, '/');
+                            onPressed: () {// 텍스트폼필드의 상태가 적함하는
+                              int flag = 0;
+                              Controller.values.forEach((element) {
+                                if(idController.text.isEmpty) flag = 0;
+                                else if(pwdController.text.isEmpty) flag = 1;
+                                else if(pwd2Controller.text.isEmpty) flag = 2;
+                                else if(dateController.text.isEmpty) flag = 3;
+                                else if(nameController.text.isEmpty) flag = 4;
+                                else if(emailController.text.isEmpty) flag = 5;
+                                else if(phoneController.text.isEmpty) flag = 6;
+                                else flag = 100;
+                              });
+                              if(flag == 100 && _dupcheck){
+                                main(idController, pwdController, nameController, dateController,_selected, emailController, phoneController);
+                                Navigator.pushNamed(context, '/');
+                              }
+                              else if(_dupcheck == false){
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      'Check Your ID Duplication',
+                                      textScaleFactor: 1.4,
+                                    ),
+                                    backgroundColor: Colors.red,
+                                  ),
+                                );
+                              }
+                              else{
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                          convert(flag) + ' Must Be Not Empty!',
+                                          textScaleFactor: 1.4,
+                                      ),
+                                      backgroundColor: Colors.red,
+                                    ),
+                                  );
+                              }
                             },
                             icon: Icon(Icons.arrow_forward),
                           ),
