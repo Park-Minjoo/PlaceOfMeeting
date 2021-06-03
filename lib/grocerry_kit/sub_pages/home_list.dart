@@ -227,13 +227,13 @@ class HomeList extends StatelessWidget {
 
   List<ChatUsers> chatUsers = [
     ChatUsers(name: "농구하실 분", room_ex: "목요일 히딩크 7시", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-    ChatUsers(name: "토익 스터디", room_ex: "일주일 세번", imageURL: "images/userImage2.jpeg"),
-    ChatUsers(name: "A", room_ex: "AAA", imageURL: "images/userImage3.jpeg"),
-    ChatUsers(name: "B", room_ex: "BBB", imageURL: "images/userImage4.jpeg"),
-    ChatUsers(name: "C", room_ex: "CCC", imageURL: "images/userImage5.jpeg"),
-    ChatUsers(name: "D", room_ex: "DDD", imageURL: "images/userImage6.jpeg"),
-    ChatUsers(name: "E", room_ex: "EEE", imageURL: "images/userImage7.jpeg"),
-    ChatUsers(name: "F", room_ex: "FFF", imageURL: "images/userImage8.jpeg"),
+    ChatUsers(name: "토익 스터디", room_ex: "일주일 세번", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    ChatUsers(name: "A", room_ex: "AAA", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    ChatUsers(name: "B", room_ex: "BBB", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    ChatUsers(name: "C", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    ChatUsers(name: "D", room_ex: "DDD", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    ChatUsers(name: "E", room_ex: "EEE", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    ChatUsers(name: "F", room_ex: "FFF", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
   ];
 
 }
@@ -257,6 +257,7 @@ class ChatRoomList extends StatefulWidget{
 }
 
 class _ChatRoomListState extends State<ChatRoomList> {
+  int favorite = -1; // temporary
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -287,6 +288,18 @@ class _ChatRoomListState extends State<ChatRoomList> {
                       ),
                     ),
                   ),
+                  IconButton(
+                    icon: favorite==-1?
+                    Icon(Icons.favorite_border_outlined):Icon(Icons.favorite),
+                    color: Colors.red,
+                    onPressed: (){
+                      setState(() {
+                        favorite *= -1;
+                        // -1: empty , 1: fill
+                        print("pressed");
+                      });
+                    },
+                  ),
                 ],
               ),
             ),
@@ -296,3 +309,8 @@ class _ChatRoomListState extends State<ChatRoomList> {
     );
   }
 }
+
+/*
+* version info = favorite button icon added (not DB)
+*
+* */
