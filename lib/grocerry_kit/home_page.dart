@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     // 여기서 bottom bar 변경
     HomeList(),
     SearchPage(),
-    ProfileList(),
+    MyChatRoomList(),
     ProfilePage(),
   ];
 

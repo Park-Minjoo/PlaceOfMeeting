@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:mysql1/mysql1.dart';
 
 final ThemeData kIOSTheme = ThemeData(
   primarySwatch: Colors.orange,
@@ -79,6 +80,32 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   final _textController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   bool _isComposing = false;
+
+  Future<int> getChat(TextEditingController msg) async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting',
+        password: 'databaseproject'
+    ));
+
+    var results = await conn.query(
+        'insert into chat_records values (?, ?, ?, ?, ?)',
+        [msg.text, msg.text, msg.text, msg.text, msg.text]
+    );
+
+    if(results.isNotEmpty){
+      for(var row in results){
+        if(msg.text == '${row[0]}'){
+          print('DEBUG' + msg.text + '${row[0]}');
+          return 1;
+        }
+      }
+    }
+
+    return 0;
+  }
 
   @override
   Widget build(BuildContext context) {

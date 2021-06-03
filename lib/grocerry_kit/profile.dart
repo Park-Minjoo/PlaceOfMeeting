@@ -1,8 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:mysql1/mysql1.dart';
 import 'model/product_model.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 
-class ProfileList extends StatelessWidget {
+class MyChatRoomList extends StatelessWidget {
+
+  Map<Map<String,int>, int> room_info = new Map<Map<String,int>, int>() ;
+
+  // final Map<String, int> title_count_set = new Map<String,int>();
+  final List<String> title_set = new List<String>();
+  final List<int> count_set = new List<int>();
+  // final List<int> selected_set = new List<int>();
+
+
+  Future<int> getChat() async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting',
+        password: 'databaseproject'
+    ));
+
+    var results = await conn.query(
+        'select title, count from rooms where selected = 1'
+    );
+
+    if(results.isNotEmpty){
+      for(var row in results){
+        title_set.add(row[0]);
+        count_set.add(row[1].toInt());
+        // title_count_set.addAll({row[0]: row[1].toInt()}) ;
+        // selected_set.add(row[2].toInt());
+      }
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +58,9 @@ class ProfileList extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 16, top: 4),
                   child: FlatButton(
-                    onPressed: () {},
+                    onPressed: () async{
+                      await getChat();
+                    },
                     child: Text(
                       'View All',
                       style: TextStyle(color: Colors.green),
@@ -45,30 +79,33 @@ class ProfileList extends StatelessWidget {
   Widget _buildChatList() {
     //var items = ChatUsers();
     return Container(
-      height: 700,
+      height: 500,
       alignment: Alignment.centerLeft,
       child: ListView.builder(
         shrinkWrap: true,
         //physics: ClampingScrollPhysics(),
         scrollDirection: Axis.vertical,
-        itemCount: chatUsers.length, // 채팅방 수
-        itemBuilder: (context, index) {
+        itemCount: title_set.length, // 채팅방 수
+        itemBuilder: (context, index){
           //var data = items[index];
           return  ChatRoomList(
-            name: chatUsers[index].name,
-            room_ex: chatUsers[index].room_ex,
-            imageUrl: chatUsers[index].imageURL,
+            name: title_set[index],
+            room_ex: count_set[index].toString(),
+            imageUrl: "",
           );
         },
       ),
     );
   }
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "롤", room_ex: "매일 밤 열한시", imageURL: "images/userImage1.jpeg"),
-    ChatUsers(name: "오버워치", room_ex: "금요일 밤", imageURL: "images/userImage2.jpeg"),
-    ChatUsers(name: "A", room_ex: "AAA", imageURL: "images/userImage3.jpeg"),
-    ChatUsers(name: "B", room_ex: "BBB", imageURL: "images/userImage4.jpeg"),
-    ChatUsers(name: "C", room_ex: "CCC", imageURL: "images/userImage5.jpeg"),
+    // ChatUsers(name: "롤", room_ex: "매일 밤 열한시", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "오버워치", room_ex: "금요일 밤", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "A", room_ex: "AAA", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "B", room_ex: "BBB", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "C", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "D", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "E", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
+    // ChatUsers(name: "F", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
   ];
 }
 
@@ -83,6 +120,7 @@ class ChatRoomList extends StatefulWidget{
   String name; // 방제목
   String room_ex; // 방 설명
   String imageUrl; //Icon icon_name; // 아이콘이나 이미지
+
   // String time;
   // bool isMessageRead;
   ChatRoomList({@required this.name,@required this.room_ex,@required this.imageUrl/*,@required this.time,@required this.isMessageRead*/});
