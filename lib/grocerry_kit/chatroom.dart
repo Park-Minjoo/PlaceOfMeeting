@@ -90,6 +90,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
         password: 'databaseproject'
     ));
 
+    // var t = await conn.query();
     var results = await conn.query(
         'insert into chat_records values (?, ?, ?, ?, ?)',
         [msg.text, msg.text, msg.text, msg.text, msg.text]

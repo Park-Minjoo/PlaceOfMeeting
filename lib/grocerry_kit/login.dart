@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
 
@@ -22,17 +24,13 @@ class _LoginPageState extends State<LoginPage> {
     ));
 
     var login = await conn.query(
-        'select user_id, password from login_info');
+        'select user_id, password from login_info where user_id = ? && password = ?', [id.text, pwd.text]);
 
-    for(var row in login){
-      print('DEBUG  ' +  id.text + '  ' + '${row[0]}');
-      print('DEBUG  ' +  pwd.text + '  ' + '${row[1]}');
-      if(id.text == '${row[0]}'	&& pwd.text == '${row[1]}'){
-        print('login');
-        return 1;
-      }
+    if(login.isNotEmpty){
+      print('로그인 가능');
+      return 1;
     }
-    return 0;
+    else return 0;
   }
 
   @override

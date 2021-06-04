@@ -43,15 +43,21 @@ class _SignupPageState extends State<SignupPage> {
     ));
 
     var results = await conn.query(
-        'select user_id from login_info');
+        'select user_id from login_info where user_id = ?', [id.text]);
 
+    if(results.isNotEmpty){
+      print('중복ㅋㅋㅋ');
+      return 1;
+    }
+    else return 0;
+/*
     for(var row in results){
       if(id.text == '${row[0]}'){
         print('DEBUG' + id.text + '${row[0]}');
         return 1;
       }
     }
-    return 0;
+    return 0; */
   }
 
   Future main(TextEditingController id, TextEditingController pwd, TextEditingController name, TextEditingController date, String gender,
@@ -242,7 +248,7 @@ class _SignupPageState extends State<SignupPage> {
                         style: TextStyle(fontSize: 18),
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
-                          hintText: 'Date of birth(ex 950725)',
+                          hintText: 'Date of birth(ex 1999.02.05)',
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                               borderSide: BorderSide(color: Colors.grey)),

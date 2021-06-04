@@ -6,6 +6,7 @@ import 'package:flutter_widgets/grocerry_kit/home_page.dart';
 import 'package:flutter_widgets/grocerry_kit/login.dart';
 import 'package:flutter_widgets/grocerry_kit/make_room.dart';
 import 'package:flutter_widgets/grocerry_kit/music.dart';
+import 'package:flutter_widgets/grocerry_kit/my_account.dart';
 import 'package:flutter_widgets/grocerry_kit/my_profile.dart';
 import 'package:flutter_widgets/grocerry_kit/profile.dart';
 import 'package:flutter_widgets/grocerry_kit/search.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
         '/grocerry/music': (context) => MusicPage(),
         '/grocerry/makeroom': (context) => makeRoomPage(),
         '/grocerry/search': (context) => SearchPage(),
-        '/grocerry/my_profile': (context) => ProfilePage(),
+        '/grocerry/my_account': (context) => MyAccountPage(),
 
         AnimatedBottomBar.tag: (context) => AnimatedBottomBar(),
         EditNote.tag: (context) => EditNote(),

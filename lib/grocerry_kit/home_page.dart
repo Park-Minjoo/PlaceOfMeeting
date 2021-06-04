@@ -5,6 +5,7 @@ import 'package:flutter_widgets/grocerry_kit/search.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 import 'sub_pages/home_list.dart';
 import 'sub_pages/cart.dart';
+import 'package:flutter_widgets/grocerry_kit/my_account.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,6 +21,7 @@ class _HomePageState extends State<HomePage> {
     SearchPage(),
     MyChatRoomList(),
     ProfilePage(),
+    MyAccountPage(),
   ];
 
   int _index = 0;
@@ -27,7 +29,38 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _buildAppBar(),
+      appBar: _buildAppBar(context),
+      /*
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
+            ),
+            ListTile(
+              title: Text('Item 1'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Item 2'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+          ]
+        ),
+      ), */
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.black,
@@ -69,19 +102,24 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-Widget _buildAppBar() {
+Widget _buildAppBar(context) {
   return AppBar(
     centerTitle: true,
     brightness: Brightness.dark,
     elevation: 0,
     backgroundColor: Colors.green,
     automaticallyImplyLeading: false,
+    leading: IconButton(
+      icon: Icon(Icons.arrow_back, color: Colors.white),
+      onPressed:(){
+        Navigator.pushNamed(context, '/');
+      }
+    ),
     title: Text(
       '좋은사람 있으면 소개시켜줘',
       style: TextStyle(color: Colors.white),
     ),
     actions: <Widget>[
-      Icon(Icons.search, color: Colors.white),
       SizedBox(
         width: 10,
       ),

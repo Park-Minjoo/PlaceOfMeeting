@@ -21,7 +21,7 @@ class WelcomePage extends StatelessWidget {
                     color: Colors.green,
                 ),
                 SizedBox(
-                  height: 230,
+                  height: 250,
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 32, bottom: 16),
