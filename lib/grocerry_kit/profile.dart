@@ -59,6 +59,8 @@ class MyChatRoomList extends StatelessWidget {
                   padding: EdgeInsets.only(left: 16, top: 4),
                   child: FlatButton(
                     onPressed: () async{
+                      title_set.clear();
+                      count_set.clear();
                       await getChat();
                     },
                     child: Text(

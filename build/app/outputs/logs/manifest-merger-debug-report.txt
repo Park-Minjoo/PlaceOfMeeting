@@ -1,0 +1,169 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0-rc01.aar/a14b633bd67d5e34f18fc4e12d7a3074/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/cddb8f66c70da97a8f21d7437edda70d/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0-rc01.aar/6da71f3cf22da9d3fde6dfd487a85178/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0-rc01.aar/de25d0da2e3990e1e890214033cdbb1a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0-rc01.aar/4aedf34a042672c0db99926e338930d0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0-rc01.aar/2ae719167c562ee2ba18669d6cd30993/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fb6433b0edbcbc3e930be721477581cf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/1cd3c62fb9b6d406259a9042623e65a5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/5524d44695c58b5b0b5670b56cd630e4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0-rc01.aar/2dd125af31fd5ff1bc730c5ab96bbacd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0-rc01.aar/64dbb0af8e11b76c4e4e6278aed7b888/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0-rc01.aar/1a48681c94b583a07fb5ac52b7ed6824/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/2c479317406326a0e2cc0afb9cbb7c1b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0-rc01.aar/fe9e481ac952f16477ca66e1035c7d2b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0-rc01.aar/cccf176ba24f0a0535e17620ad8c837f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.2.0.aar/a920d6b6e6e05fddaf9966cf2aec2a46/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/eb869929b3ee6b0e84578013c91f8853/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/e4e418a8973b480933f78678dabde8f7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/dccc14547ae8894cfaf903f3361bdc9c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0-rc01.aar/391ef58e612aa660d23dae47efbf928e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/3a7c6e82f9e2cbb9e383f413ca6c9e77/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/5d716c7fe9814769f0f8013d3aaba421/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0-rc01.aar/3af290c1cc3f09d114d34f49bf96980a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0-rc01.aar/eba659f87f7fe268d5c9d88a79e36aa9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/print-1.0.0-rc01.aar/3cddaca15da5cb11155a6779bf186f45/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/422bcb248c53ff8bd4816a1b9315580a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0-rc01.aar/d04a32dfb439934c5df6a2df51b9dcc3/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+	package
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:8:22-64
+application
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:15:5-38:19
+MERGED from [androidx.core:core:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/5d716c7fe9814769f0f8013d3aaba421/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/5d716c7fe9814769f0f8013d3aaba421/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:17:9-40
+	android:icon
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:18:9-43
+	android:name
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:16:9-57
+activity#com.example.flutterwidgets.MainActivity
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:19:9-37:20
+	android:launchMode
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:21:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:24:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:25:13-55
+	android:configChanges
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:23:13-137
+	android:theme
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:22:13-47
+	android:name
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:20:13-41
+meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:30:13-32:40
+	android:value
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:32:17-37
+	android:name
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:31:17-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:34:17-68
+	android:name
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:35:17-76
+	android:name
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0-rc01.aar/a14b633bd67d5e34f18fc4e12d7a3074/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0-rc01.aar/a14b633bd67d5e34f18fc4e12d7a3074/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/cddb8f66c70da97a8f21d7437edda70d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/cddb8f66c70da97a8f21d7437edda70d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0-rc01.aar/6da71f3cf22da9d3fde6dfd487a85178/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0-rc01.aar/6da71f3cf22da9d3fde6dfd487a85178/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0-rc01.aar/de25d0da2e3990e1e890214033cdbb1a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0-rc01.aar/de25d0da2e3990e1e890214033cdbb1a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0-rc01.aar/4aedf34a042672c0db99926e338930d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0-rc01.aar/4aedf34a042672c0db99926e338930d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0-rc01.aar/2ae719167c562ee2ba18669d6cd30993/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0-rc01.aar/2ae719167c562ee2ba18669d6cd30993/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fb6433b0edbcbc3e930be721477581cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fb6433b0edbcbc3e930be721477581cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/1cd3c62fb9b6d406259a9042623e65a5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/1cd3c62fb9b6d406259a9042623e65a5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/5524d44695c58b5b0b5670b56cd630e4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/5524d44695c58b5b0b5670b56cd630e4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0-rc01.aar/2dd125af31fd5ff1bc730c5ab96bbacd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0-rc01.aar/2dd125af31fd5ff1bc730c5ab96bbacd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0-rc01.aar/64dbb0af8e11b76c4e4e6278aed7b888/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0-rc01.aar/64dbb0af8e11b76c4e4e6278aed7b888/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0-rc01.aar/1a48681c94b583a07fb5ac52b7ed6824/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0-rc01.aar/1a48681c94b583a07fb5ac52b7ed6824/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/2c479317406326a0e2cc0afb9cbb7c1b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/2c479317406326a0e2cc0afb9cbb7c1b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0-rc01.aar/fe9e481ac952f16477ca66e1035c7d2b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0-rc01.aar/fe9e481ac952f16477ca66e1035c7d2b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0-rc01.aar/cccf176ba24f0a0535e17620ad8c837f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0-rc01.aar/cccf176ba24f0a0535e17620ad8c837f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.2.0.aar/a920d6b6e6e05fddaf9966cf2aec2a46/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.2.0.aar/a920d6b6e6e05fddaf9966cf2aec2a46/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/eb869929b3ee6b0e84578013c91f8853/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/eb869929b3ee6b0e84578013c91f8853/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/e4e418a8973b480933f78678dabde8f7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/e4e418a8973b480933f78678dabde8f7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/dccc14547ae8894cfaf903f3361bdc9c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/dccc14547ae8894cfaf903f3361bdc9c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0-rc01.aar/391ef58e612aa660d23dae47efbf928e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0-rc01.aar/391ef58e612aa660d23dae47efbf928e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/3a7c6e82f9e2cbb9e383f413ca6c9e77/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/3a7c6e82f9e2cbb9e383f413ca6c9e77/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/5d716c7fe9814769f0f8013d3aaba421/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/5d716c7fe9814769f0f8013d3aaba421/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0-rc01.aar/3af290c1cc3f09d114d34f49bf96980a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0-rc01.aar/3af290c1cc3f09d114d34f49bf96980a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0-rc01.aar/eba659f87f7fe268d5c9d88a79e36aa9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0-rc01.aar/eba659f87f7fe268d5c9d88a79e36aa9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/print-1.0.0-rc01.aar/3cddaca15da5cb11155a6779bf186f45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/print-1.0.0-rc01.aar/3cddaca15da5cb11155a6779bf186f45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/422bcb248c53ff8bd4816a1b9315580a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/422bcb248c53ff8bd4816a1b9315580a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0-rc01.aar/d04a32dfb439934c5df6a2df51b9dcc3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] /Users/minjoo/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0-rc01.aar/d04a32dfb439934c5df6a2df51b9dcc3/AndroidManifest.xml:20:5-44
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/minjoo/Desktop/PlaceOfMeeting/android/app/src/main/AndroidManifest.xml

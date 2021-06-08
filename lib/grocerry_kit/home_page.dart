@@ -20,7 +20,6 @@ class _HomePageState extends State<HomePage> {
     HomeList(),
     SearchPage(),
     MyChatRoomList(),
-    ProfilePage(),
     MyAccountPage(),
   ];
 
@@ -123,7 +122,13 @@ Widget _buildAppBar(context) {
       SizedBox(
         width: 10,
       ),
-      Icon(Icons.notifications_none, color: Colors.white),
+      IconButton(
+        icon: Icon(Icons.notifications_none, color: Colors.white),
+        onPressed:(){
+          Navigator.pushNamed(context, '');
+        }
+      ),
+
       SizedBox(
         width: 10,
       ),

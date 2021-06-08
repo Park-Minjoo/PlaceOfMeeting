@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64b84c14-83cb-42f9-a933-08f745da7290" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Flutter-UI-Kits-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/activity/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/appcompat/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/arch/core/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/asynclayoutinflater/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/coordinatorlayout/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/core/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/cursoradapter/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/customview/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/documentfile/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/drawerlayout/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/fragment/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/interpolator/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/legacy/coreui/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/legacy/coreutils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/lifecycle/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/lifecycle/livedata/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/lifecycle/livedata/core/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/lifecycle/viewmodel/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/loader/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/localbroadcastmanager/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/print/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/savedstate/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/slidingpanelayout/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/swiperefreshlayout/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/vectordrawable/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/versionedparcelable/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/viewpager/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/example/flutterwidgets/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/generated/source/buildConfig/debug/com/example/flutterwidgets/BuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/apk_list/debug/mainApkListPersistenceDebug/apk-list.gson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-am.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-as.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-az.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-b+sr+Latn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-be.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-bg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-bn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-bs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-cs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-el.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-en-rCA.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-en-rXC.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-et.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-eu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-fi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-fr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-gl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-gu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-h720dp-v13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-hdpi-v4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-hi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-hr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-hu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-hy.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-in.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-is.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-it.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-iw.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ja.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ka.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-kk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-km.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-kn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ko.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ky.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-land.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-large-v4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ldltr-v21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-lo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-lt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-lv.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-mk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-mn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-mr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-my.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-nb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ne.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-night-v8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-nl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-or.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-pa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-pl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-port.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-pt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ro.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-si.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sq.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sv.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sw.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-sw600dp-v13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-te.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-th.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-tl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-tr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-uk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-ur.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-uz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v18.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v22.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v25.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v26.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-v28.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-vi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-watch-v20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-watch-v21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-xlarge-v4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-zu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/out/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/.last_build_id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/FontManifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/fonts/CartIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/images/menu_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/libs.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/activity/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$anim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$bool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/appcompat/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/arch/core/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/asynclayoutinflater/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/coordinatorlayout/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/core/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/cursoradapter/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/customview/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/documentfile/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/drawerlayout/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/fragment/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/interpolator/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreui/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/legacy/coreutils/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/lifecycle/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/lifecycle/livedata/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/lifecycle/livedata/core/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/lifecycle/viewmodel/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/loader/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/localbroadcastmanager/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/print/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/savedstate/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/slidingpanelayout/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/swiperefreshlayout/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/vectordrawable/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/versionedparcelable/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/viewpager/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/BuildConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/MainActivity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$anim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$bool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$dimen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$integer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$mipmap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$string.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R$styleable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/flutterwidgets/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/flutter/plugins/GeneratedPluginRegistrant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/FontManifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/fonts/CartIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/images/menu_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/isolate_snapshot_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/vm_snapshot_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/merged_manifests/debug/processDebugManifest/merged/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/processed_res/debug/processDebugResources/out/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_tooltip_enter.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v21_abc_btn_colored_borderless_text_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_btn_colored_text_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_tint_btn_checkable.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_tint_edittext.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_tint_spinner.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_background_cache_hint_selector_material_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_background_cache_hint_selector_material_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_secondary_text_material_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_secondary_text_material_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_tint_default.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/color_switch_thumb_material_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v21_abc_dialog_material_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v21_abc_edit_text_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v21_abc_list_divider_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_btn_borderless_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_btn_default_mtrl_shape.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_clear_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_go_search_api_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_search_api_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_item_background_holo_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ratingbar_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_seekbar_track_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_spinner_textfield_background_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_abc_vector_test.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_notification_bg.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_tooltip_frame_light.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_title_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_action_bar_title_item.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_action_bar_up_container.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_action_mode_bar.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_alert_dialog_button_bar_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_cascading_menu_item_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_expanded_menu_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_search_view.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_abc_tooltip.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_custom_dialog.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_select_dialog_item_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-af_values-af.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-am_values-am.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-as_values-as.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-az_values-az.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-be_values-be.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-da_values-da.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-de_values-de.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-el_values-el.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-en-rXC_values-en-rXC.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-es_values-es.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-et_values-et.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-in_values-in.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-is_values-is.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-it_values-it.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-km_values-km.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-land_values-land.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-my_values-my.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-night-v8_values-night-v8.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-or_values-or.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-port_values-port.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-si_values-si.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-te_values-te.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-th_values-th.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v25_values-v25.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v26_values-v26.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-v28_values-v28.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-watch-v21_values-watch-v21.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/split_list/debug/splitsDiscoveryTaskDebug/split-list.gson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/20.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/24.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/27.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/28.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/31.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/33.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/35.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/37.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/1/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/externalLibsDexMerger/debug/__content__.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libflutter.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/x86_64/libflutter.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/app/tmp/packLibsflutterBuildDebug/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/last_build_run.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/sub_pages/home_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/sub_pages/home_list.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sy5G5djU4YleeYCyDPu4r2XKDR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64b84c14-83cb-42f9-a933-08f745da7290" name="Default Changelist" comment="" />
+      <created>1621831890045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621831890045</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622805491100">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="184" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875@0.25.1440.875" timestamp="1622805491100" />
+    <state x="457" y="256" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1622805446701">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="457" y="256" key="#com.intellij.ide.util.TreeFileChooserDialog/0.25.1440.875@0.25.1440.875" timestamp="1622805446701" />
+    <state x="394" y="101" width="653" height="487" key="AVDManager" timestamp="1622792423921">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="394" y="101" width="653" height="487" key="AVDManager/0.0.1280.680@0.0.1280.680" timestamp="1622792423921" />
+    <state x="100" y="99" key="FileChooserDialogImpl" timestamp="1622605667850">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="100" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1622605667850" />
+    <state width="1398" height="228" key="GridCell.Tab.0.bottom" timestamp="1622881122659">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="593" height="178" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1622792578146" />
+    <state width="1398" height="228" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1622881122659" />
+    <state width="1398" height="228" key="GridCell.Tab.0.center" timestamp="1622881122658">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="593" height="178" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1622792578145" />
+    <state width="1398" height="228" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1622881122658" />
+    <state width="1398" height="228" key="GridCell.Tab.0.left" timestamp="1622881122658">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="593" height="178" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1622792578145" />
+    <state width="1398" height="228" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1622881122658" />
+    <state width="1398" height="228" key="GridCell.Tab.0.right" timestamp="1622881122659">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="593" height="178" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1622792578145" />
+    <state width="1398" height="228" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1622881122659" />
+    <state x="221" y="98" key="SettingsEditor" timestamp="1622805512179">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="221" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1622805512179" />
+    <state x="27" y="154" key="run.anything.popup" timestamp="1622381315017">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="27" y="154" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1622381315017" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/grocerry_kit/home_page.dart</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
