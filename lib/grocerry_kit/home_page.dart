@@ -3,11 +3,16 @@ import 'package:flutter_widgets/grocerry_kit/my_profile.dart';
 import 'package:flutter_widgets/grocerry_kit/profile.dart';
 import 'package:flutter_widgets/grocerry_kit/search.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
+import 'manage_list.dart';
 import 'sub_pages/home_list.dart';
-import 'sub_pages/cart.dart';
 import 'package:flutter_widgets/grocerry_kit/my_account.dart';
 
+
+
 class HomePage extends StatefulWidget {
+  final int id;
+  HomePage({Key key, @required this.id}) : super(key:key);
+
   @override
   State<StatefulWidget> createState() {
     return _HomePageState();
@@ -15,51 +20,56 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Widget> _widgetList = [
-    // 여기서 bottom bar 변경
-    HomeList(),
-    SearchPage(),
-    MyChatRoomList(),
-    MyAccountPage(),
-  ];
 
   int _index = 0;
 
   @override
   Widget build(BuildContext context) {
+    // final Arg arg = ModalRoute.of(context).settings.arguments;
+    //  print(arg.uid);
+    List<Widget> _widgetList = [
+      // 여기서 bottom bar 변경
+      HomeList(id: widget.id),
+      SearchPage(),
+      ProfileList(),
+      MyAccountPage(id: widget.id),
+    ];
+
     return Scaffold(
-      appBar: _buildAppBar(context),
-      /*
-      drawer: Drawer(
-        child: ListView(
-          children: <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Text('Drawer Header'),
-            ),
-            ListTile(
-              title: Text('Item 1'),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: Text('Item 2'),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-          ]
+      appBar: AppBar(
+        centerTitle: true,
+        brightness: Brightness.dark,
+        elevation: 0,
+        backgroundColor: Colors.green,
+        automaticallyImplyLeading: false,
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.white),
+            onPressed:(){
+              Navigator.pushNamed(context, '/');
+            }
         ),
-      ), */
+        title: Text(
+          '좋은사람 있으면 소개시켜줘',
+          style: TextStyle(color: Colors.white),
+        ),
+        actions: <Widget>[
+          SizedBox(
+            width: 10,
+          ),
+          IconButton(
+            icon: Icon(Icons.notifications_none, color: Colors.white),
+            onPressed: (){
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ManageList(id: widget.id))
+              );
+            },
+          ),
+          SizedBox(
+            width: 10,
+          ),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.black,
@@ -99,41 +109,6 @@ class _HomePageState extends State<HomePage> {
       body: _widgetList[_index],
     );
   }
-}
-
-Widget _buildAppBar(context) {
-  return AppBar(
-    centerTitle: true,
-    brightness: Brightness.dark,
-    elevation: 0,
-    backgroundColor: Colors.green,
-    automaticallyImplyLeading: false,
-    leading: IconButton(
-      icon: Icon(Icons.arrow_back, color: Colors.white),
-      onPressed:(){
-        Navigator.pushNamed(context, '/');
-      }
-    ),
-    title: Text(
-      '좋은사람 있으면 소개시켜줘',
-      style: TextStyle(color: Colors.white),
-    ),
-    actions: <Widget>[
-      SizedBox(
-        width: 10,
-      ),
-      IconButton(
-        icon: Icon(Icons.notifications_none, color: Colors.white),
-        onPressed:(){
-          Navigator.pushNamed(context, '');
-        }
-      ),
-
-      SizedBox(
-        width: 10,
-      ),
-    ],
-  );
 }
 
 Widget _buildBottomBar(BuildContext con) {

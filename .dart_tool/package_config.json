@@ -122,6 +122,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mysql_utils",
+      "rootUri": "file:///Users/minjoo/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/mysql_utils-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/minjoo/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
@@ -200,7 +206,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2021-06-04T11:23:18.577249Z",
+  "generated": "2021-06-08T02:26:01.716547Z",
   "generator": "pub",
   "generatorVersion": "2.14.0-165.0.dev"
 }

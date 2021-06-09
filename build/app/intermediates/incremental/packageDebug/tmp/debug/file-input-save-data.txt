@@ -1,4 +1,5 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Fri Jun 04 20:29:19 KST 2021
 4.path=flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 13.baseType=DIRECTORY
@@ -19,12 +20,24 @@
 13.base=/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out
 1.baseType=DIRECTORY
 11.set=DEX
+=======
+#Sat Jun 05 02:04:51 KST 2021
+8.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+2.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+0.path=flutter_assets/images/menu_icon.png
+8.set=ASSET
+3.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+5.path=flutter_assets/vm_snapshot_data
+9.set=DEX
+13.set=DEX
+12.baseType=DIRECTORY
+1.path=flutter_assets/NOTICES
+9.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
 0.set=ASSET
-6.baseType=DIRECTORY
-7.set=ASSET
-3.set=ASSET
-2.baseType=DIRECTORY
+5.baseType=DIRECTORY
 10.baseType=DIRECTORY
+<<<<<<< HEAD
 1.path=flutter_assets/kernel_blob.bin
 7.baseType=DIRECTORY
 3.path=flutter_assets/AssetManifest.json
@@ -57,3 +70,48 @@ count=14
 12.set=ASSET
 1.set=ASSET
 2.path=flutter_assets/NOTICES.Z
+=======
+10.path=lib/x86/libflutter.so
+13.path=classes.dex
+6.set=ASSET
+count=14
+5.set=ASSET
+7.set=NATIVE_RESOURCE
+7.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+4.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+9.path=classes.dex
+11.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+11.baseType=DIRECTORY
+1.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+4.baseType=DIRECTORY
+6.path=flutter_assets/AssetManifest.json
+3.set=ASSET
+3.path=flutter_assets/fonts/MaterialIcons-Regular.otf
+9.baseType=DIRECTORY
+10.set=NATIVE_RESOURCE
+5.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+6.baseType=DIRECTORY
+0.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+6.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+13.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\1
+3.baseType=DIRECTORY
+8.path=flutter_assets/isolate_snapshot_data
+11.path=flutter_assets/FontManifest.json
+4.set=ASSET
+0.baseType=DIRECTORY
+13.baseType=DIRECTORY
+8.baseType=DIRECTORY
+12.set=ASSET
+4.path=flutter_assets/kernel_blob.bin
+12.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+7.path=lib/x86_64/libflutter.so
+1.set=ASSET
+2.path=flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+2.baseType=DIRECTORY
+10.base=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+2.set=ASSET
+11.set=ASSET
+12.path=flutter_assets/fonts/CartIcons.ttf
+7.baseType=DIRECTORY
+1.baseType=DIRECTORY
+>>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d

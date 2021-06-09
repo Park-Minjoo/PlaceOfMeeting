@@ -45,19 +45,13 @@ class _SignupPageState extends State<SignupPage> {
     var results = await conn.query(
         'select user_id from login_info where user_id = ?', [id.text]);
 
+    conn.close();
+
     if(results.isNotEmpty){
       print('중복ㅋㅋㅋ');
       return 1;
     }
     else return 0;
-/*
-    for(var row in results){
-      if(id.text == '${row[0]}'){
-        print('DEBUG' + id.text + '${row[0]}');
-        return 1;
-      }
-    }
-    return 0; */
   }
 
   Future main(TextEditingController id, TextEditingController pwd, TextEditingController name, TextEditingController date, String gender,
@@ -78,7 +72,7 @@ class _SignupPageState extends State<SignupPage> {
           [0, gender=='Man'? 1 : 0, date.text, id.text, pwd.text, email.text, pnum.text]
     );
 
-    print('Inserted row id=${result.insertId}');
+    conn.close();
   }
 
   String convert(int num){

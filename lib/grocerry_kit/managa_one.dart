@@ -1,82 +1,58 @@
 import 'package:flutter/material.dart';
+import 'model/product_model.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 
-import 'model/product_model.dart';
+class Arg {
+  final int uid;
+  Arg(this.uid);
+}
 
-class GamePage extends StatelessWidget {
+// ignore: must_be_immutable
+class ManageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('게임'),
-
-      ),
+      appBar: _buildAppBar(context),
       body: Container(
         color: const Color(0xffF4F7FA),
         child: ListView(
-            children: <Widget>[
-              Column(
           children: <Widget>[
-            _buildCategoryList(), // 리얼 카테고리 나열한 친구
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(left: 16, top: 4),
                   child: Text(
-                    '채팅 방',
+                    'My Chatrooms',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(left: 16, top: 4),
+                  child: FlatButton(
+                    onPressed: () {},
+                    child: Text(
+                      'View All',
+                      style: TextStyle(color: Colors.green),
+                    ),
+                  ),
+                ),
               ],
             ),
-            _buildChatList(), // 리얼 아이템 나열한 친구
+            _buildChatList(),
           ],
         ),
-      ]),
       ),
-    );
-  }
-
-  Widget _buildCategoryList() {
-    //var items = addItems();
-    return Container(
-      height: 300,
-      alignment: Alignment.center,
-      child: Column(children: <Widget>[
-            Container(
-              margin: EdgeInsets.all(0),
-              width: 400,
-              height: 200,
-              alignment: Alignment.center,
-              child: Icon(
-                Icons.videogame_asset_outlined,
-                size: 200,
-                color: Colors.lightGreen,
-              ),
-              decoration: BoxDecoration(
-                shape: BoxShape.rectangle,
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black12,
-                    offset: Offset(0, 5),
-                    blurRadius: 15,
-                  )
-                ],
-              ),
-            ),
-          ]),
     );
   }
 
   Widget _buildChatList() {
     //var items = ChatUsers();
     return Container(
-      height: 280,
+      height: 700,
       alignment: Alignment.centerLeft,
       child: ListView.builder(
         shrinkWrap: true,
@@ -100,11 +76,28 @@ class GamePage extends StatelessWidget {
     ChatUsers(name: "A", room_ex: "AAA", imageURL: "images/userImage3.jpeg"),
     ChatUsers(name: "B", room_ex: "BBB", imageURL: "images/userImage4.jpeg"),
     ChatUsers(name: "C", room_ex: "CCC", imageURL: "images/userImage5.jpeg"),
-    ChatUsers(name: "D", room_ex: "DDD", imageURL: "images/userImage6.jpeg"),
-    ChatUsers(name: "E", room_ex: "EEE", imageURL: "images/userImage7.jpeg"),
-    ChatUsers(name: "F", room_ex: "FFF", imageURL: "images/userImage8.jpeg"),
   ];
-  }
+}
+
+Widget _buildAppBar(context) {
+  return AppBar(
+    centerTitle: true,
+    brightness: Brightness.dark,
+    elevation: 0,
+    backgroundColor: Colors.green,
+    automaticallyImplyLeading: false,
+    leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed:(){
+            Navigator.pushNamed(context, '/');
+          }
+    ),
+    title: Text(
+      'Place of Meeting',
+      style: TextStyle(color: Colors.white),
+      ),
+    );
+}
 
 class ChatUsers{
   String name;
@@ -121,14 +114,15 @@ class ChatRoomList extends StatefulWidget{
   // bool isMessageRead;
   ChatRoomList({@required this.name,@required this.room_ex,@required this.imageUrl/*,@required this.time,@required this.isMessageRead*/});
   @override
-  _ChatRoomListState createState() => _ChatRoomListState();
+  _ManageOneState createState() => _ManageOneState();
 }
 
-class _ChatRoomListState extends State<ChatRoomList> {
+class _ManageOneState extends State<ChatRoomList> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
+        Navigator.pushNamed(context, '/grocerry/chatroom');
       },
       child: Container(
         padding: EdgeInsets.only(left: 16,right: 16,top: 10,bottom: 10),

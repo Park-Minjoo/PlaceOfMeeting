@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
+import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -24,11 +25,13 @@ class _LoginPageState extends State<LoginPage> {
     ));
 
     var login = await conn.query(
-        'select user_id, password from login_info where user_id = ? && password = ?', [id.text, pwd.text]);
+        'select ID user_id, password from login_info where user_id = ? && password = ?', [id.text, pwd.text]);
+
+    conn.close();
 
     if(login.isNotEmpty){
       print('로그인 가능');
-      return 1;
+      return login.first[0];
     }
     else return 0;
   }
@@ -141,8 +144,11 @@ class _LoginPageState extends State<LoginPage> {
                             var result;
                             result = await main(idController, pwdController);
                             print(result);
-                            if(result == 1) {
-                              Navigator.pushNamed(context, '/grocerry/home');
+                            if(result > 0) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => HomePage(id: result))
+                              );
                             }
                             else {
                               ScaffoldMessenger.of(context).showSnackBar(

@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
 
-class MyAccountPage extends StatelessWidget {
+class MyAccountPage extends StatefulWidget {
+  final int id;
+  MyAccountPage({Key key, @required this.id}) : super(key:key);
+
+  @override
+  State<StatefulWidget> createState() => new _MyAccountPage();
+}
 
 
+class _MyAccountPage extends State<MyAccountPage> {
+  bool isLoading = true;
+  USER user;
+  List<String> job = ['없음','학생'];
+  List<String> religion = ['없음', '기독교'];
 
-  Future db_user_info(TextEditingController search_term) async {
-    int gender;
+  Future <String> db_user_info(int id) async {
+    var gender;
     int religion;
     int job;
     String date_of_birth;
@@ -14,7 +25,7 @@ class MyAccountPage extends StatelessWidget {
     String phone_num;
     String name;
     String memo;
-
+    String MBTI;
     final conn = await MySqlConnection.connect(ConnectionSettings(
         host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
         port: 3306,
@@ -24,353 +35,410 @@ class MyAccountPage extends StatelessWidget {
     ));
 
     //print('SELECT title, count FROM rooms WHERE title LIKE \'\%${search_term.text}\%\'');
-    var result = await conn.query('SELECT gender, date_of_birth, email, phone_num FROM login_info WHERE ID = 8');
-    var info = await conn.query('SELECT name, memo, religion, job FROM person_info WHERE ID = 8 ');
+    var result = await conn.query('SELECT gender, date_of_birth, email, phone_num FROM login_info WHERE ID = ?', [id.toString()]);
+    var info = await conn.query('SELECT name, memo, religion, job, MBTI FROM person_info WHERE ID = ?', [id.toString()]);
+
     if( result.isNotEmpty ) {
       for (var row in result) {
-        gender = row[0].toInt(); date_of_birth = row[1]; email = row[2]; phone_num = row[3];
+        gender = row[0]; date_of_birth = row[1]; email = row[2]; phone_num = row[3];
+        print(row[0] + " " + date_of_birth);
       }
     }
 
     if( info.isNotEmpty) {
       for (var row in info) {
-        name = row[0]; memo = row[1]; religion = row[2]; job = row[3];
+        name = row[0]; memo = row[1]; religion = row[2].toInt(); job = row[3].toInt(); MBTI = row[4];
+        print(row[0]);
       }
     }
 
     conn.close();
-    return new USER(gender, religion, job, date_of_birth, email, phone_num, name, memo);
+    user = new USER(gender, religion, job, date_of_birth, email, phone_num, name, memo, MBTI);
   }
+  final Future<String> _calculation = Future<String>.delayed(
+    const Duration(seconds: 2),
+        () => 'Data Loaded',
+  );
 
+  void initState() {
+    super.initState();
+    db_user_info(widget.id);
+    setState(() {
+      isLoading = false;
+    });
+  }
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+        child: DefaultTextStyle(
+          style: Theme.of(context).textTheme.headline2,
+          textAlign: TextAlign.center,
+          child: FutureBuilder<String>(
+            future: _calculation, // a previously-obtained Future<String> or null
+            builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+              List<Widget> children;
+              if (snapshot.hasData) {
+                children = <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
 //          mainAxisSize: MainAxisSize.min,
-
-          children: <Widget>[
-            Container(
-              margin: EdgeInsets.only(top:20),
-              padding: EdgeInsets.only(left:16, right: 16),
-              child: Card(
-                shadowColor: Colors.blueAccent,
-                elevation: 10,
-                child: Column(
+                    children: <Widget>[
+                      Container(
+                          margin: EdgeInsets.only(top:20),
+                          padding: EdgeInsets.only(left:16, right: 16),
+                          child: Card(
+                            shadowColor: Colors.blueAccent,
+                            elevation: 10,
+                            child: Column(
 //                mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
+                              mainAxisSize: MainAxisSize.min,
 
-                  children: <Widget>[
-                    Container(
-                        margin: EdgeInsets.only(left: 30, top: 5),
-                        padding: EdgeInsets.only(top:10),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                                "내 정보",
-                                style: TextStyle(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                )
-                            ),
-                          ],
-                        )
-                    ),
-                    Container(
-                        margin: EdgeInsets.only(left:30, right: 30, top:20, bottom: 15),
-                        child: Row(
-                          children: <Widget> [
-                            Container(
-                              width: 70,
-                              height: 70,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blue,
-                              ),
-                            ),
-
-                            Padding(
-                              padding: EdgeInsets.only(left: 20),
-                            ),
-
-                            Container(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                mainAxisSize: MainAxisSize.min,
-
-                                children: <Widget>[
-                                  Container(
-                                      margin: EdgeInsets.only(right: 125,bottom: 5),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: <Widget>[
-                                          Text(
-                                              "김진일",
-                                              style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold,
-                                              )
+                              children: <Widget>[
+                                Container(
+                                    margin: EdgeInsets.only(left: 30, top: 5),
+                                    padding: EdgeInsets.only(top:10),
+                                    child: Row(
+                                      children: <Widget>[
+                                        Text(
+                                            "내 정보",
+                                            style: TextStyle(
+                                              fontSize: 22,
+                                              fontWeight: FontWeight.bold,
+                                            )
+                                        ),
+                                      ],
+                                    )
+                                ),
+                                Container(
+                                    margin: EdgeInsets.only(left:30, right: 30, top:20, bottom: 15),
+                                    child: Row(
+                                      children: <Widget> [
+                                        Container(
+                                          width: 70,
+                                          height: 70,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(50),
+                                            color: Colors.blue,
                                           ),
-                                        ],
-                                      )
-                                  ),
-                                  Text(
-                                      "21900195@handong.edu",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                      )
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        )
-                    ),
+                                        ),
+
+                                        Padding(
+                                          padding: EdgeInsets.only(left: 20),
+                                        ),
+
+                                        Container(
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            mainAxisSize: MainAxisSize.min,
+
+                                            children: <Widget>[
+                                              Container(
+                                                  margin: EdgeInsets.only(right: 125,bottom: 5),
+                                                  child: Row(
+                                                    mainAxisAlignment: MainAxisAlignment.start,
+                                                    mainAxisSize: MainAxisSize.min,
+                                                    children: <Widget>[
+                                                      Text(
+                                                          user.name,
+                                                          style: TextStyle(
+                                                            fontSize: 21,
+                                                            fontWeight: FontWeight.bold,
+                                                          )
+                                                      ),
+                                                    ],
+                                                  )
+                                              ),
+                                              Text(
+                                                  user.email,
+                                                  style: TextStyle(
+                                                    fontSize: 16,
+                                                  )
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                ),
 
 
-                    Padding(
-                      padding: EdgeInsets.only(top:20),
-                    ),
+                                Padding(
+                                  padding: EdgeInsets.only(top:20),
+                                ),
 
-                    Container(
-                      margin: EdgeInsets.only(left: 15, right: 15),
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                              child: Row(
-                                children: <Widget> [
-                                  Text("생년월일",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                      )
-                                  ),
-                                ],
-                              )
-                          ),
-
-                          Container(
-                              margin: EdgeInsets.only(left: 10, top: 5),
-                              child: Row(
-                                children: <Widget> [
-                                  Text("2000.01.26",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                      )
-                                  ),
-                                ],
-                              )
-                          ),
-
-                          Padding(
-                              padding: EdgeInsets.only(top: 20)
-                          ),
-                          Container(
-                              child: Row(
-                                children: <Widget> [
-                                  Text("휴대폰 번호",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                      )
-                                  ),
-                                ],
-                              )
-                          ),
-
-                          Container(
-                              margin: EdgeInsets.only(left: 10, top: 5),
-                              child: Row(
-                                children: <Widget> [
-                                  Text("010-4160-9587",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                      )
-                                  ),
-                                ],
-                              )
-                          ),
-                          Padding(
-                              padding: EdgeInsets.only(top: 20)
-                          ),
-
-                          Container(
-                            height: 2,
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top:5),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            mainAxisSize: MainAxisSize.min,
-
-                            children: <Widget> [
-                              Container(
-                                  padding: EdgeInsets.only(left: 25, right: 25),
+                                Container(
+                                  margin: EdgeInsets.only(left: 15, right: 15),
                                   child: Column(
-                                    children: [
+                                    children: <Widget>[
+                                      Container(
+                                          child: Row(
+                                            children: <Widget> [
+                                              Text("생년월일",
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.bold,
+                                                  )
+                                              ),
+                                            ],
+                                          )
+                                      ),
+
+                                      Container(
+                                          margin: EdgeInsets.only(left: 10, top: 5),
+                                          child: Row(
+                                            children: <Widget> [
+                                              Text(user.date_of_birth,
+                                                  style: TextStyle(
+                                                    fontSize: 16,
+                                                  )
+                                              ),
+                                            ],
+                                          )
+                                      ),
+
+                                      Padding(
+                                          padding: EdgeInsets.only(top: 20)
+                                      ),
+                                      Container(
+                                          child: Row(
+                                            children: <Widget> [
+                                              Text("휴대폰 번호",
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.bold,
+                                                  )
+                                              ),
+                                            ],
+                                          )
+                                      ),
+
+                                      Container(
+                                          margin: EdgeInsets.only(left: 10, top: 5),
+                                          child: Row(
+                                            children: <Widget> [
+                                              Text(user.phone_num,
+                                                  style: TextStyle(
+                                                    fontSize: 16,
+                                                  )
+                                              ),
+                                            ],
+                                          )
+                                      ),
+                                      Padding(
+                                          padding: EdgeInsets.only(top: 20)
+                                      ),
+
+                                      Container(
+                                        height: 2,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsets.only(top:5),
+                                      ),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        mainAxisSize: MainAxisSize.min,
+
+                                        children: <Widget> [
+                                          Container(
+                                              padding: EdgeInsets.only(left: 25, right: 25),
+                                              child: Column(
+                                                children: [
 //                                      Row(
 //                                        children: <Widget> [
-                                      Container(
-                                        child: Text("MBTI",
-                                            style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold,
-                                            )
-                                        ),
-                                      ),
-                                      Container(
-                                          margin: EdgeInsets.only(top: 5),
+                                                  Container(
+                                                    child: Text("MBTI",
+                                                        style: TextStyle(
+                                                          fontSize: 18,
+                                                          fontWeight: FontWeight.bold,
+                                                        )
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                      margin: EdgeInsets.only(top: 5),
 //                                  padding: EdgeInsets.only(left: 45, right: 30),
-                                          child: Row(
-                                            children: <Widget> [
-                                              Text("ESTJ",
-                                                  style: TextStyle(
-                                                    fontSize: 16,
+                                                      child: Row(
+                                                        children: <Widget> [
+                                                          Text(user.MBTI,
+                                                              style: TextStyle(
+                                                                fontSize: 16,
+                                                              )
+                                                          ),
+                                                        ],
+                                                      )
                                                   )
-                                              ),
-                                            ],
-                                          )
-                                      )
 //                                        ],
 //                                      )
-                                    ],
-                                  )
-                              ),
+                                                ],
+                                              )
+                                          ),
 
-                              Padding(
-                                  padding: EdgeInsets.only(left: 10)
-                              ),
+                                          Padding(
+                                              padding: EdgeInsets.only(left: 10)
+                                          ),
 
 
-                              Container(
-                                  padding: EdgeInsets.only(left: 25, right: 25),
-                                  child: Column(
-                                    children: <Widget> [
-                                      Container(
-                                        child: Text("직업",
-                                            style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold,
-                                            )
-                                        ),
-                                      ),
+                                          Container(
+                                              padding: EdgeInsets.only(left: 25, right: 25),
+                                              child: Column(
+                                                children: <Widget> [
+                                                  Container(
+                                                    child: Text("직업",
+                                                        style: TextStyle(
+                                                          fontSize: 18,
+                                                          fontWeight: FontWeight.bold,
+                                                        )
+                                                    ),
+                                                  ),
 
-                                      Container(
+                                                  Container(
 //                                          margin: EdgeInsets.only(top: 5),
 //                                  padding: EdgeInsets.only(left: 30, right: 30),
-                                          child: Row(
-                                            children: <Widget> [
-                                              Text("대학생",
-                                                  style: TextStyle(
-                                                    fontSize: 16,
+                                                      child: Row(
+                                                        children: <Widget> [
+                                                          Text(job[user.job],
+                                                              style: TextStyle(
+                                                                fontSize: 16,
+                                                              )
+                                                          ),
+                                                        ],
+                                                      )
                                                   )
-                                              ),
-                                            ],
-                                          )
-                                      )
-                                    ],
-                                  )
-                              ),
+                                                ],
+                                              )
+                                          ),
 
-                              Padding(
-                                  padding: EdgeInsets.only(left: 10)
-                              ),
+                                          Padding(
+                                              padding: EdgeInsets.only(left: 10)
+                                          ),
 
-                              Container(
-                                  padding: EdgeInsets.only(left: 25, right: 25),
-                                  child: Column(
-                                    children: <Widget> [
+                                          Container(
+                                              padding: EdgeInsets.only(left: 25, right: 25),
+                                              child: Column(
+                                                children: <Widget> [
+                                                  Container(
+                                                    child: Text("종교",
+                                                        style: TextStyle(
+                                                          fontSize: 18,
+                                                          fontWeight: FontWeight.bold,
+                                                        )
+                                                    ),
+                                                  ),
+
+                                                  Container(
+//                                          margin: EdgeInsets.only( top: 5),
+//                                  padding: EdgeInsets.only(left: 30, right: 30),
+                                                      child: Row(
+                                                        children: <Widget> [
+                                                          Text(religion[user.religion],
+                                                              style: TextStyle(
+                                                                fontSize: 16,
+                                                              )
+                                                          ),
+                                                        ],
+                                                      )
+                                                  )
+                                                ],
+                                              )
+                                          ),
+
+
+                                        ],
+                                      ),
+
+                                      Padding(
+                                        padding: EdgeInsets.only(top:8),
+                                      ),
                                       Container(
-                                        child: Text("종교",
-                                            style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold,
-                                            )
+                                        height: 2,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
                                         ),
                                       ),
 
+                                      Padding(
+                                          padding: EdgeInsets.only(top: 20)
+                                      ),
+
                                       Container(
-//                                          margin: EdgeInsets.only( top: 5),
-//                                  padding: EdgeInsets.only(left: 30, right: 30),
                                           child: Row(
                                             children: <Widget> [
-                                              Text("기독교",
+                                              Text("자기 소개",
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.bold,
                                                   )
                                               ),
                                             ],
                                           )
-                                      )
+                                      ),
+
+                                      Container(
+                                          margin: EdgeInsets.only(left: 10, top: 5),
+                                          child: Row(
+                                            children: <Widget> [
+                                              Flexible(
+                                                child:Text(user.memo,
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                    )
+                                                ),
+                                              )
+                                            ],
+                                          )
+                                      ),
+
+                                      Padding(padding: EdgeInsets.only(bottom: 100)),
                                     ],
-                                  )
-                              ),
-
-
-                            ],
-                          ),
-
-                          Padding(
-                            padding: EdgeInsets.only(top:8),
-                          ),
-                          Container(
-                            height: 2,
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                            ),
-                          ),
-
-                          Padding(
-                              padding: EdgeInsets.only(top: 20)
-                          ),
-
-                          Container(
-                              child: Row(
-                                children: <Widget> [
-                                  Text("자기 소개",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                      )
                                   ),
-                                ],
-                              )
-                          ),
-
-                          Container(
-                              margin: EdgeInsets.only(left: 10, top: 5),
-                              child: Row(
-                                children: <Widget> [
-                                  Flexible(
-                                    child:Text("안녕하세요~ 반갑습니다.",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                        )
-                                    ),
-                                  )
-                                ],
-                              )
-                          ),
-
-                          Padding(padding: EdgeInsets.only(bottom: 100)),
-                        ],
-                      ),
-                    )
-                  ],
+                                )
+                              ],
+                            ),
+                          )
+                      )
+                    ],
+                  ),
+                ];
+              } else if (snapshot.hasError) {
+                children = <Widget>[
+                  const Icon(
+                    Icons.error_outline,
+                    color: Colors.red,
+                    size: 40,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16),
+                    child: Text('Error: ${snapshot.error}'),
+                  )
+                ];
+              } else {
+                children = const <Widget>[
+                  Padding(padding: EdgeInsets.only(top:100)),
+                  SizedBox(
+                    child: CircularProgressIndicator(),
+                    width: 40,
+                    height: 40,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 16),
+                    child: Text('Awaiting result...', style: TextStyle(fontSize: 30)),
+                  )
+                ];
+              }
+              return Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: children,
                 ),
-              )
-            )
-
-
-          ],
-
+              );
+            },
+          ),
         ),
       ),
     );
@@ -381,7 +449,7 @@ class MyAccountPage extends StatelessWidget {
 //gender, date_of_birth, email, phone_num
 //name, memo, religion, job
 class USER{
-  int gender;
+  var gender;
   int religion;
   int job;
   String date_of_birth;
@@ -389,9 +457,6 @@ class USER{
   String phone_num;
   String name;
   String memo;
-
-  USER(int g, int r, int j, String d, String e, String p, String name, String memo) {
-    this.gender = g ; this.religion = r; this.job = j ;
-    this.date_of_birth = d; this.email = e; this.phone_num = p; this.name = name; this.memo = memo;
-  }
+  String MBTI;
+  USER(this.gender, this.religion, this.job, this.date_of_birth, this.email, this.phone_num, this.name, this.memo, this.MBTI) ;
 }
