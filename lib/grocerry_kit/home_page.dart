@@ -3,6 +3,7 @@ import 'package:flutter_widgets/grocerry_kit/my_profile.dart';
 import 'package:flutter_widgets/grocerry_kit/profile.dart';
 import 'package:flutter_widgets/grocerry_kit/search.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
+import 'board_pages/board_room.dart';
 import 'manage_list.dart';
 import 'sub_pages/home_list.dart';
 import 'package:flutter_widgets/grocerry_kit/my_account.dart';
@@ -31,7 +32,8 @@ class _HomePageState extends State<HomePage> {
       // 여기서 bottom bar 변경
       HomeList(id: widget.id),
       SearchPage(),
-      MyChatRoomList(),
+      // MyChatRoomList(),
+      BoardPage(),
       MyAccountPage(id: widget.id),
     ];
 

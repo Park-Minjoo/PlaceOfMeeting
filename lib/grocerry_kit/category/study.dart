@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 
-import 'model/product_model.dart';
+import '/grocerry_kit/model/product_model.dart';
 
-class MusicPage extends StatelessWidget {
+class StudyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('음악'),
+        title: Text('스터디'),
 
       ),
       body: Container(
@@ -53,7 +53,7 @@ class MusicPage extends StatelessWidget {
           height: 200,
           alignment: Alignment.center,
           child: Icon(
-            Icons.music_video,
+            Icons.menu_book_outlined,
             size: 200,
             color: Colors.lightGreen,
           ),
@@ -95,8 +95,8 @@ class MusicPage extends StatelessWidget {
     );
   }
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "밴드 부원 모집합니다", room_ex: "드럼, 보컬", imageURL: "images/userImage1.jpeg"),
-    ChatUsers(name: "리코더 연습 같이해요", room_ex: "리코더", imageURL: "images/userImage2.jpeg"),
+    ChatUsers(name: "토익 공부 같이 하실 분", room_ex: "주 3회 모여서 스터디해ㅛ", imageURL: "images/userImage1.jpeg"),
+    ChatUsers(name: "면접 스터디", room_ex: "주말동안 면접 스터디 하실 분", imageURL: "images/userImage2.jpeg"),
     ChatUsers(name: "A", room_ex: "AAA", imageURL: "images/userImage3.jpeg"),
     ChatUsers(name: "B", room_ex: "BBB", imageURL: "images/userImage4.jpeg"),
     ChatUsers(name: "C", room_ex: "CCC", imageURL: "images/userImage5.jpeg"),

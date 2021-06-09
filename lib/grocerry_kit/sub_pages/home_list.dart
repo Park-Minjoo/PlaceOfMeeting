@@ -3,7 +3,7 @@ import 'package:flutter_widgets/grocerry_kit/home_page.dart';
 import 'package:flutter_widgets/grocerry_kit/make_room.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:flutter/widgets.dart';
-import '../category_detail.dart';
+import '../category/category_detail.dart';
 import '../model/product_model.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 

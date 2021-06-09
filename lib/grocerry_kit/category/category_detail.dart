@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 import 'package:mysql1/mysql1.dart';
 
-import 'model/product_model.dart';
+import '../model/product_model.dart';
 
 class CategoryDetailPage extends StatefulWidget {
   final int category_id;

@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 
-import 'model/product_model.dart';
-
-class StudyPage extends StatelessWidget {
+class SportsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('스터디'),
+        title: Text('스포츠'),
 
       ),
       body: Container(
@@ -53,7 +51,7 @@ class StudyPage extends StatelessWidget {
           height: 200,
           alignment: Alignment.center,
           child: Icon(
-            Icons.menu_book_outlined,
+            Icons.sports_basketball_outlined,
             size: 200,
             color: Colors.lightGreen,
           ),
@@ -95,8 +93,8 @@ class StudyPage extends StatelessWidget {
     );
   }
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "토익 공부 같이 하실 분", room_ex: "주 3회 모여서 스터디해ㅛ", imageURL: "images/userImage1.jpeg"),
-    ChatUsers(name: "면접 스터디", room_ex: "주말동안 면접 스터디 하실 분", imageURL: "images/userImage2.jpeg"),
+    ChatUsers(name: "농구하실 분", room_ex: "목요일 히딩크 7시", imageURL: "images/userImage1.jpeg"),
+    ChatUsers(name: "아침 운동", room_ex: "아침마다 운동장 돌아요~", imageURL: "images/userImage2.jpeg"),
     ChatUsers(name: "A", room_ex: "AAA", imageURL: "images/userImage3.jpeg"),
     ChatUsers(name: "B", room_ex: "BBB", imageURL: "images/userImage4.jpeg"),
     ChatUsers(name: "C", room_ex: "CCC", imageURL: "images/userImage5.jpeg"),
