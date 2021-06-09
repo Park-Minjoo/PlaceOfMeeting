@@ -132,7 +132,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(0);
                               },
                             ),
-                            Text("스포츠"),
+                            Text("Sports"),
                           ],
                         ),
                         SizedBox(width: 25),
@@ -146,7 +146,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(1);
                               },
                             ),
-                            Text("게임"),
+                            Text("Game"),
                           ],
                         ),
                         SizedBox(width: 25),
@@ -160,7 +160,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(2);
                               },
                             ),
-                            Text("음악"),
+                            Text("Music"),
                           ],
                         ),
                         SizedBox(width: 25),
@@ -174,7 +174,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(3);
                               },
                             ),
-                            Text("스터디"),
+                            Text("Study"),
                           ],
                         ),
                       ]
@@ -196,7 +196,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(4);
                               },
                             ),
-                            Text("음식"),
+                            Text("EAT"),
                           ],
                         ),
                         SizedBox(width: 25),
@@ -210,7 +210,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(5);
                               },
                             ),
-                            Text("친구"),
+                            Text("Friend"),
                           ],
                         ),
                         SizedBox(width: 25),
@@ -224,7 +224,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(6);
                               },
                             ),
-                            Text("독서"),
+                            Text("Reading"),
                           ],
                         ),
                         SizedBox(width: 25),
@@ -238,7 +238,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                                 changeCategory(7);
                               },
                             ),
-                            Text("기타"),
+                            Text("etc"),
                           ],
                         ),
                       ]
@@ -254,7 +254,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                 keyboardType: TextInputType.text,
                 style: TextStyle(fontSize: 17),
                 decoration: InputDecoration(
-                  hintText: '제 목',
+                  hintText: 'Title here',
                   isDense: true,
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -273,7 +273,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                 keyboardType: TextInputType.text,
                 style: TextStyle(fontSize: 17),
                 decoration: InputDecoration(
-                  hintText: '내 용',
+                  hintText: 'Description',
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(color: Colors.green)),
@@ -297,7 +297,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget> [
                       Text(
-                          "모집 기간 ",
+                          "Recruitment Period",
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -343,7 +343,7 @@ class _makeRoomPage extends State<makeRoomPage> {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget> [
                       Text(
-                          "모집 인원 ",
+                          "Recruitment number",
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -376,9 +376,9 @@ class _makeRoomPage extends State<makeRoomPage> {
             RaisedButton(
               padding: EdgeInsets.only(left: 150, right:150),
               child: Text(
-                "방 생성",
+                "Make Your Room!",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 14,
                   color: Colors.white,
                 ),
               ),

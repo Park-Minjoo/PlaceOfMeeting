@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-#Fri Jun 04 20:29:17 KST 2021
+#Wed Jun 09 15:12:44 KST 2021
 base.0=/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/transforms/dexMerger/debug/0
-=======
-#Sat Jun 05 13:55:20 KST 2021
-base.1=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
 path.1=classes.dex
-base.0=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\1
 renamed.1=classes2.dex
-renamed.0=classes.dex
-<<<<<<< HEAD
-base.1=/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/transforms/dexMerger/debug/1
-=======
 path.0=classes.dex
->>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
+renamed.0=classes.dex
+base.1=/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/transforms/dexMerger/debug/1

@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
       // 여기서 bottom bar 변경
       HomeList(id: widget.id),
       SearchPage(),
-      ProfileList(),
+      MyChatRoomList(),
       MyAccountPage(id: widget.id),
     ];
 
@@ -45,11 +45,11 @@ class _HomePageState extends State<HomePage> {
         leading: IconButton(
             icon: Icon(Icons.arrow_back, color: Colors.white),
             onPressed:(){
-              Navigator.pushNamed(context, '/');
+              Navigator.pop(context);
             }
         ),
         title: Text(
-          '좋은사람 있으면 소개시켜줘',
+          'Place Of meeting',
           style: TextStyle(color: Colors.white),
         ),
         actions: <Widget>[

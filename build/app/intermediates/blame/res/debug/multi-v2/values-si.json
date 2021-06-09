@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/Users/minjoo/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/234204bef4e04bb75e05d848b9535d09/res/values-si/values-si.xml",
-=======
-            "outputFile": "C:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-si\\values-si.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\audwn\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\a72b9ae35b968373245f333a1f1af7b5\\res\\values-si\\values-si.xml",
->>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,11 +21,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "/Users/minjoo/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0-rc01.aar/a14b633bd67d5e34f18fc4e12d7a3074/res/values-si/values-si.xml",
-=======
-                    "source": "C:\\Users\\audwn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0-rc01.aar\\2e60b394fa4cd2695c184e4fc3928c4c\\res\\values-si\\values-si.xml",
->>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

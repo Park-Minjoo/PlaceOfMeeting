@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
                     "source": "/Users/minjoo/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0-rc01.aar/a14b633bd67d5e34f18fc4e12d7a3074/res/values-v17/values-v17.xml",
-=======
-            "outputFile": "C:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\audwn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0-rc01.aar\\2e60b394fa4cd2695c184e4fc3928c4c\\res\\values-v17\\values-v17.xml",
->>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

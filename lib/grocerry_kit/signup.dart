@@ -48,7 +48,7 @@ class _SignupPageState extends State<SignupPage> {
     conn.close();
 
     if(results.isNotEmpty){
-      print('중복ㅋㅋㅋ');
+      print('중복ㅋㅋㅋ'); // ?
       return 1;
     }
     else return 0;
@@ -176,14 +176,14 @@ class _SignupPageState extends State<SignupPage> {
                                     _dupcheck = true;
                                     ScaffoldMessenger.of(context).showSnackBar(
                                         SnackBar(
-                                          content: Text('사용가능한 ID입니다.'),
+                                          content: Text('Available ID!'),
                                         ),
                                     );
                                   }
                                   else{
                                     ScaffoldMessenger.of(context).showSnackBar(
                                       SnackBar(
-                                        content: Text('이미 존재하는 ID입니다.'),
+                                        content: Text('Invalid ID, Please try another ID.'),
                                       ),
                                     );
                                   }

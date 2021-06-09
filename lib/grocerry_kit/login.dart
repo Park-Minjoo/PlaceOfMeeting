@@ -153,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                             else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
-                                    content: Text('ID가 존재하지 않거나, 잘못된 비밀번호 입니다.'),
+                                    content: Text('Please enter valid ID and password.'),
                                   ),
                               );
                             }
