@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:mysql1/mysql1.dart';
 import 'design_course_app_theme.dart';
 
 class BoardPage extends StatefulWidget {
+  final int room_id;
+  BoardPage({Key key, @required this.room_id}) : super(key: key);
+
   @override
   _BoardPageState createState() => _BoardPageState();
 }
@@ -14,16 +19,15 @@ class _BoardPageState extends State<BoardPage>
   double opacity1 = 0.0;
   double opacity2 = 0.0;
   double opacity3 = 0.0;
-  @override
-  void initState() {
-    animationController = AnimationController(
-        duration: const Duration(milliseconds: 1000), vsync: this);
-    animation = Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-        parent: animationController,
-        curve: Interval(0, 1.0, curve: Curves.fastOutSlowIn)));
-    setData();
-    super.initState();
-  }
+
+  Map<Map<String,int>, int> room_info = new Map<Map<String,int>, int>() ;
+  final List<String> title_set = new List<String>();
+  final List<int> count_set = new List<int>();
+  final List<String> des_set = new List<String>();
+  final List<DateTime> date_set = new List<DateTime>();
+  // final List<DateFormat> formatter = new List<DateFormat>(3);
+  // final List<String> formatted = formatter.format(date_set);
+
 
   Future<void> setData() async {
     animationController.forward();
@@ -41,8 +45,58 @@ class _BoardPageState extends State<BoardPage>
     });
   }
 
+  Future<int> getRoomInfo(int room_id) async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting',
+        password: 'databaseproject'
+    ));
+
+    var results = await conn.query(
+        'select title, count, description, dueday from rooms WHERE room_id = ?', [room_id]);
+
+    if(results.isNotEmpty){
+      for(var row in results){
+        title_set.add(row[0]);
+        count_set.add(row[1].toInt());
+        des_set.add(row[2]);
+        date_set.add(row[3].toDate());
+        // title_count_set.addAll({row[0]: row[1].toInt()}) ;
+        // selected_set.add(row[2].toInt());
+        // print('debug');
+        // print(row[0]);
+        // print(row[1]);
+        print(row[3].toDate());
+      }
+    }
+  }
+
+  final Future<String> _calculation = Future<String>.delayed(
+    const Duration(seconds: 2),
+        () => 'Data Loaded',
+  );
+
+  @override
+  void initState() {
+    animationController = AnimationController(
+        duration: const Duration(milliseconds: 1000), vsync: this);
+    animation = Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+        parent: animationController,
+        curve: Interval(0, 1.0, curve: Curves.fastOutSlowIn)));
+    setData();
+    super.initState();
+    getRoomInfo(widget.room_id);
+  }
+
   @override
   Widget build(BuildContext context) {
+    // print("room id: " + widget.room_id.toString());
+    // print("room title: " + title_set[0].toString());
+    // print("room count: " + count_set[0].toString());
+    // print("date: " + date_set.toString());
+
     final double tempHeight = MediaQuery.of(context).size.height -
         (MediaQuery.of(context).size.width / 1.2) +
         24.0;
@@ -95,7 +149,7 @@ class _BoardPageState extends State<BoardPage>
                             padding: const EdgeInsets.only(
                                 top: 32.0, left: 18, right: 16),
                             child: Text(
-                              'TOEIC\nStudy',
+                              title_set[0].toString(),
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 fontWeight: FontWeight.w600,
@@ -113,7 +167,7 @@ class _BoardPageState extends State<BoardPage>
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
                                 Text(
-                                  '~2021.7.13',
+                                  DateFormat.yMMMd().format(DateTime.now()),
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                     fontWeight: FontWeight.w500,
@@ -125,21 +179,6 @@ class _BoardPageState extends State<BoardPage>
                                 Container(
                                   child: Row(
                                     children: <Widget>[
-                                      // Text(
-                                      //   '13',
-                                      //   textAlign: TextAlign.left,
-                                      //   style: TextStyle(
-                                      //     fontWeight: FontWeight.w200,
-                                      //     fontSize: 22,
-                                      //     letterSpacing: 0.27,
-                                      //     color: Colors.teal,
-                                      //   ),
-                                      // ),
-                                      // Icon(
-                                      //   Icons.star,
-                                      //   color: Colors.teal,
-                                      //   size: 24,
-                                      // ),
                                     ],
                                   ),
                                 )
@@ -154,8 +193,8 @@ class _BoardPageState extends State<BoardPage>
                               child: Row(
                                 children: <Widget>[
                                   // getTimeBoxUI('24', 'Classe'),
-                                  getTimeBoxUI('2hours', 'Time'),
-                                  getTimeBoxUI('5', 'Seat'),
+                                  // getTimeBoxUI('2hours', 'Time'),
+                                  getTimeBoxUI(count_set[0].toString(), 'Seat'),
                                 ],
                               ),
                             ),
@@ -168,7 +207,8 @@ class _BoardPageState extends State<BoardPage>
                                 padding: const EdgeInsets.only(
                                     left: 16, right: 16, top: 8, bottom: 8),
                                 child: Text(
-                                  'We are going to study TOEIC Together, let us study HARD together!',
+                                  // 'We are going to study TOEIC Together, let us study HARD together!',
+                                  des_set[0].toString(),
                                   textAlign: TextAlign.justify,
                                   style: TextStyle(
                                     fontWeight: FontWeight.w300,
@@ -205,10 +245,11 @@ class _BoardPageState extends State<BoardPage>
                                             color: DesignCourseAppTheme.grey
                                                 .withOpacity(0.2)),
                                       ),
-                                      child: Icon(
-                                        Icons.add,
-                                        color: Colors.lightGreen,
-                                        size: 28,
+                                      child: IconButton(
+                                          icon: Icon(Icons.add, color: Colors.lightGreen),
+                                          onPressed:(){
+                                            Navigator.pushNamed(context, '/grocerry/room');
+                                          }
                                       ),
                                     ),
                                   ),

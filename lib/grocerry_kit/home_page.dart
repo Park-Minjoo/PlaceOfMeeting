@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/grocerry_kit/my_profile.dart';
 import 'package:flutter_widgets/grocerry_kit/profile.dart';
+import 'package:flutter_widgets/grocerry_kit/room.dart';
 import 'package:flutter_widgets/grocerry_kit/search.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 import 'board_pages/board_room.dart';
@@ -33,7 +34,7 @@ class _HomePageState extends State<HomePage> {
       HomeList(id: widget.id),
       SearchPage(),
       // MyChatRoomList(),
-      BoardPage(),
+      MyRoomList(),
       MyAccountPage(id: widget.id),
     ];
 

@@ -98,6 +98,12 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/minjoo/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.16.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.5"
+    },
+    {
       "name": "logging",
       "rootUri": "file:///Users/minjoo/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.0.1",
       "packageUri": "lib/",
@@ -206,7 +212,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2021-06-09T05:49:43.125153Z",
+  "generated": "2021-06-13T14:30:40.502558Z",
   "generator": "pub",
   "generatorVersion": "2.14.0-165.0.dev"
 }

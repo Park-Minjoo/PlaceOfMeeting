@@ -18,6 +18,7 @@ import 'package:flutter_widgets/grocerry_kit/welcome.dart';
 import 'package:flutter_widgets/note_app/edit_note.dart';
 
 import 'grocerry_kit/board_pages/board_room.dart';
+import 'grocerry_kit/room.dart';
 import 'grocerry_kit/signup.dart';
 import 'grocerry_kit/sub_pages/cart.dart';
 
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         '/grocerry/login': (context) => LoginPage(),
         '/grocerry/home': (context) => HomePage(),
         '/grocerry/cart': (context) => CartPage(),
-        '/grocerry/chatroom': (context) => ChatRoomPage(),
+        '/grocerry/room': (context) => MyRoomList(),
         '/grocerry/profile': (context) => MyChatRoomList(),
         '/grocerry/board' : (context) => BoardPage(),
 //           '/grocerry/sub_pages/home_list': HomeList(),
