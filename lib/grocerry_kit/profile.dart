@@ -1,173 +1,196 @@
-// import 'package:flutter/material.dart';
-// import 'package:mysql1/mysql1.dart';
-// import 'model/product_model.dart';
-// import 'package:flutter_widgets/utils/cart_icons_icons.dart';
-//
-// class MyChatRoomList extends StatelessWidget {
-//
-//   Map<Map<String,int>, int> room_info = new Map<Map<String,int>, int>() ;
-//
-//   // final Map<String, int> title_count_set = new Map<String,int>();
-//   final List<String> title_set = new List<String>();
-//   final List<int> count_set = new List<int>();
-//   // final List<int> selected_set = new List<int>();
-//
-//
-//   Future<int> getChat() async {
-//     final conn = await MySqlConnection.connect(ConnectionSettings(
-//         host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
-//         port: 3306,
-//         user: 'rootuser',
-//         db: 'placeofmeeting',
-//         password: 'databaseproject'
-//     ));
-//
-//     var results = await conn.query(
-//         'select title, count from rooms where selected = 1'
-//     );
-//
-//     if(results.isNotEmpty){
-//       for(var row in results){
-//         title_set.add(row[0]);
-//         count_set.add(row[1].toInt());
-//         // title_count_set.addAll({row[0]: row[1].toInt()}) ;
-//         // selected_set.add(row[2].toInt());
-//       }
-//     }
-//   }
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Container(
-//         color: const Color(0xffF4F7FA),
-//         child: ListView(
-//           children: <Widget>[
-//             Row(
-//               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//               children: <Widget>[
-//                 Padding(
-//                   padding: EdgeInsets.only(left: 16, top: 4),
-//                   child: Text(
-//                     'My Chatrooms',
-//                     style: TextStyle(
-//                       fontSize: 18,
-//                       fontWeight: FontWeight.bold,
-//                     ),
-//                   ),
-//                 ),
-//                 Padding(
-//                   padding: EdgeInsets.only(left: 16, top: 4),
-//                   child: FlatButton(
-//                     onPressed: () async{
-//                       title_set.clear();
-//                       count_set.clear();
-//                       await getChat();
-//                     },
-//                     child: Text(
-//                       'View All',
-//                       style: TextStyle(color: Colors.green),
-//                     ),
-//                   ),
-//                 ),
-//               ],
-//             ),
-//             _buildChatList(),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-//
-//   Widget _buildChatList() {
-//     //var items = ChatUsers();
-//     return Container(
-//       height: 500,
-//       alignment: Alignment.centerLeft,
-//       child: ListView.builder(
-//         shrinkWrap: true,
-//         //physics: ClampingScrollPhysics(),
-//         scrollDirection: Axis.vertical,
-//         itemCount: title_set.length, // 채팅방 수
-//         itemBuilder: (context, index){
-//           //var data = items[index];
-//           return  ChatRoomList(
-//             name: title_set[index],
-//             room_ex: count_set[index].toString(),
-//             imageUrl: "",
-//           );
-//         },
-//       ),
-//     );
-//   }
-//   // List<ChatUsers> chatUsers = [
-//     // ChatUsers(name: "롤", room_ex: "매일 밤 열한시", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "오버워치", room_ex: "금요일 밤", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "A", room_ex: "AAA", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "B", room_ex: "BBB", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "C", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "D", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "E", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//     // ChatUsers(name: "F", room_ex: "CCC", imageURL: "http://www.sjpost.co.kr/news/photo/202007/53199_48342_4214.jpg"),
-//   // ];
-// }
-//
-// class ChatUsers{
-//   String name;
-//   String room_ex;
-//   String imageURL;
-//   ChatUsers({@required this.name,@required this.room_ex,@required this.imageURL});
-// }
-//
-// class ChatRoomList extends StatefulWidget{
-//   String name; // 방제목
-//   String room_ex; // 방 설명
-//   String imageUrl; //Icon icon_name; // 아이콘이나 이미지
-//
-//   // String time;
-//   // bool isMessageRead;
-//   ChatRoomList({@required this.name,@required this.room_ex,@required this.imageUrl/*,@required this.time,@required this.isMessageRead*/});
-//   @override
-//   _ChatRoomListState createState() => _ChatRoomListState();
-// }
-//
-// class _ChatRoomListState extends State<ChatRoomList> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return GestureDetector(
-//       onTap: (){
-//         Navigator.pushNamed(context, '/grocerry/chatroom');
-//       },
-//       child: Container(
-//         padding: EdgeInsets.only(left: 16,right: 16,top: 10,bottom: 10),
-//         child: Row(
-//           children: <Widget>[
-//             Expanded(
-//               child: Row(
-//                 children: <Widget>[
-//                   CircleAvatar(
-//                     backgroundImage: NetworkImage(widget.imageUrl),
-//                     maxRadius: 30,
-//                   ),
-//                   SizedBox(width: 16,),
-//                   Expanded(
-//                     child: Container(
-//                       color: Colors.transparent,
-//                       child: Column(
-//                         crossAxisAlignment: CrossAxisAlignment.start,
-//                         children: <Widget>[
-//                           Text(widget.name, style: TextStyle(fontSize: 16),),
-//                           SizedBox(height: 6,),
-//                           Text(widget.room_ex,style: TextStyle(fontSize: 13,color: Colors.grey.shade600, fontWeight: FontWeight.normal),),
-//                         ],
-//                       ),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
+
+import 'package:flutter/material.dart';
+import 'package:mysql1/mysql1.dart';
+import 'manage_one.dart';
+import 'model/product_model.dart';
+import 'package:flutter_widgets/utils/cart_icons_icons.dart';
+
+
+class ProfileList extends StatefulWidget {
+  final int id;
+  ProfileList({Key key, @required this.id}) : super(key:key);
+
+  @override
+  State<StatefulWidget> createState() {
+    return _ProfileList();
+  }
+}
+class Manage{
+  String title;
+  String description;
+  int count;
+
+  Manage(this.title, this.description, this.count);
+}
+
+class _ProfileList extends State<ProfileList> {
+  @override
+  List<Manage> _list = [];
+  int num;
+
+  Future<int> getData(int uid) async{
+    List<Manage> temp = [];
+    int n_data;
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting',
+        password: 'databaseproject'
+    ));
+
+    var results = await conn.query(
+        'select title, description, count '
+            'from rooms, room_people where room_people.room_id = rooms.room_id AND room_people.ID = ?', [uid]);
+    conn.close();
+
+    for(var row in results) {
+      print('title: ${row[0]}, desc: ${row[1]}, count: ${row[2]}');
+      Manage m = new Manage(row[0], row[1], row[2]);
+      temp.add((m));
+      //   _list.add(temp);
+    }
+
+    //   n_data = results.length;
+    print(n_data);
+
+    num = results.length;
+    _list = temp;
+  }
+
+  final Future<String> _calculation = Future<String>.delayed(
+    const Duration(seconds: 3),
+        () => 'Data Loaded',
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    int uid = widget.id;
+    getData(uid);
+
+    return Scaffold(
+        body: SingleChildScrollView(
+            child: DefaultTextStyle(
+              style: Theme.of(context).textTheme.headline2,
+              textAlign: TextAlign.center,
+              child: FutureBuilder<String>(
+                future: _calculation,
+                builder: (BuildContext context, AsyncSnapshot<String> snapshot){
+                  List<Widget> children;
+                  if(snapshot.hasData){
+                    children = <Widget>[
+                      SizedBox(height: 23),
+                      Text(
+                        'Manage My Own Room',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      _myList(num, _list, uid),
+                    ];
+                  }else if (snapshot.hasError) {
+                    children = <Widget>[
+                      const Icon(
+                        Icons.error_outline,
+                        color: Colors.red,
+                        size: 40,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16),
+                        child: Text('Error: ${snapshot.error}'),
+                      )
+                    ];
+                  } else {
+                    children = const <Widget>[
+                      Padding(padding: EdgeInsets.only(top:300)),
+                      SizedBox(
+                        child: CircularProgressIndicator(
+                          color: Colors.green,
+                        ),
+                        width: 40,
+                        height: 40,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(top: 16),
+                      )
+                    ];
+                  }
+                  return Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: children,
+                    ),
+                  );
+                },
+              ),
+            )
+        )
+    );
+  }
+}
+
+Widget _myList(int n, List<Manage> mlist, int uid){
+  if(n==0){
+    return Container(
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 100),
+            Icon(
+              Icons.add_shopping_cart, size: 100,
+            ),
+          ],
+        )
+    );
+  }
+  else{
+    return ListView.separated(
+      padding: const EdgeInsets.fromLTRB(8.0, 20.0, 8.0, 8.0),
+      scrollDirection: Axis.vertical,
+      shrinkWrap: true,
+      itemCount: n,
+      itemBuilder: (BuildContext context, int index) {
+        return Container(
+          height: 75,
+          color: index % 2 == 0 ? Colors.green : Colors.green[200],
+          child: ListTile(
+            leading: Icon(Icons.star, color: Colors.amberAccent),
+            title: Text(
+              '${mlist[index].title}',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+              textAlign: TextAlign.start,
+            ), //{entries[index]}'),
+            subtitle: Padding(
+              padding: EdgeInsets.only(top: 5),
+              child: Text(''
+                  '${mlist[index].description}',
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            // trailing: IconButton(
+            //     icon: Icon(Icons.people_alt_outlined, color: Colors.white, size: 35),
+            //     onPressed: () {
+            //       Navigator.push(
+            //           context,
+            //           MaterialPageRoute(builder: (context) => ManageOne(id: uid))
+            //       );
+            //     }
+            // ),
+          ),
+        );
+      },
+      separatorBuilder: (BuildContext context, int index) => const Divider(),
+    );
+  }
+}

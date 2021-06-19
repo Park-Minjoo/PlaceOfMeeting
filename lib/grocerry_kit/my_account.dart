@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
 
+import 'sub_pages/introduce_edit.dart';
+
 class MyAccountPage extends StatefulWidget {
   final int id;
   MyAccountPage({Key key, @required this.id}) : super(key:key);
@@ -9,12 +11,81 @@ class MyAccountPage extends StatefulWidget {
   State<StatefulWidget> createState() => new _MyAccountPage();
 }
 
-
 class _MyAccountPage extends State<MyAccountPage> {
   bool isLoading = true;
   USER user;
-  List<String> job = ['없음','학생'];
-  List<String> religion = ['없음', '기독교'];
+  // TODO: 기타 나중에 작업
+  List<String> job = ['없음','학생', '전문직', '회사원', '자영업', 'CEO', '기타'];
+  List<String> religion = ['없음', '기독교', '천주교', '원불교', '불교', '기타'];
+
+  int job_index(String job_t) {
+    int idx = 0 ;
+    for (int i = 0 ; i < job.length; i++) {
+      if (job_t == job[i]) {
+        idx = i;
+        break;
+      }
+    }
+    return idx;
+  }
+
+  int religion_index(String religion_t) {
+    int idx = 0 ;
+    for (int i = 0 ; i < religion.length; i++) {
+      if (religion_t == religion[i]) {
+        idx = i ;
+        break;
+      }
+    }
+    return idx;
+  }
+
+  Future db_update_MBTI(String MBTI) async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting'  ,
+        password: 'databaseproject'
+    ));
+
+    await conn.query('UPDATE person_info SET MBTI = ? WHERE ID = ?',[MBTI, widget.id]);
+
+    conn.close();
+  }
+
+  Future db_update_job(String job) async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting'  ,
+        password: 'databaseproject'
+    ));
+
+    await conn.query('UPDATE person_info SET job = ? WHERE ID = ?',[job_index(job), widget.id]);
+
+    conn.close();
+  }
+
+  Future db_update_religion(String religion) async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting'  ,
+        password: 'databaseproject'
+    ));
+
+    var result = await conn.query('UPDATE person_info SET religion = ? WHERE ID = ?',[religion, widget.id]);
+
+    if( result.isNotEmpty ) {
+      print("RELIGION UPDATE");
+    }else {
+      print("NOT RELIGION UPDATE!!!");
+    }
+    conn.close();
+  }
 
   Future <String> db_user_info(int id) async {
     var gender;
@@ -34,9 +105,8 @@ class _MyAccountPage extends State<MyAccountPage> {
         password: 'databaseproject'
     ));
 
-    //print('SELECT title, count FROM rooms WHERE title LIKE \'\%${search_term.text}\%\'');
     var result = await conn.query('SELECT gender, date_of_birth, email, phone_num FROM login_info WHERE ID = ?', [id.toString()]);
-    var info = await conn.query('SELECT name, memo, religion, job, MBTI FROM person_info WHERE ID = ?', [id.toString()]);
+    var info = await conn.query('SELECT name, memo, religion, job, MBTI FROM person_info WHERE ID = ?',[id.toString()]);
 
     if( result.isNotEmpty ) {
       for (var row in result) {
@@ -47,14 +117,17 @@ class _MyAccountPage extends State<MyAccountPage> {
 
     if( info.isNotEmpty) {
       for (var row in info) {
-        name = row[0]; memo = row[1]; religion = row[2].toInt(); job = row[3].toInt(); MBTI = row[4];
-        print(row[0]);
+        name = row[0]; memo = (row[1] == null) ? "없음" : row[1]; religion = (row[2] == null) ? 0 : row[2].toInt();
+        job = (row[3] == null) ? 0 : row[3].toInt(); MBTI = (row[4] == null) ? "없음" : row[4];
       }
     }
+
 
     conn.close();
     user = new USER(gender, religion, job, date_of_birth, email, phone_num, name, memo, MBTI);
   }
+
+
   final Future<String> _calculation = Future<String>.delayed(
     const Duration(seconds: 2),
         () => 'Data Loaded',
@@ -63,6 +136,7 @@ class _MyAccountPage extends State<MyAccountPage> {
   void initState() {
     super.initState();
     db_user_info(widget.id);
+
     setState(() {
       isLoading = false;
     });
@@ -85,6 +159,7 @@ class _MyAccountPage extends State<MyAccountPage> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
 //          mainAxisSize: MainAxisSize.min,
+
                     children: <Widget>[
                       Container(
                           margin: EdgeInsets.only(top:20),
@@ -103,7 +178,7 @@ class _MyAccountPage extends State<MyAccountPage> {
                                     child: Row(
                                       children: <Widget>[
                                         Text(
-                                            "내 정보",
+                                            "My information",
                                             style: TextStyle(
                                               fontSize: 22,
                                               fontWeight: FontWeight.bold,
@@ -176,7 +251,7 @@ class _MyAccountPage extends State<MyAccountPage> {
                                       Container(
                                           child: Row(
                                             children: <Widget> [
-                                              Text("생년월일",
+                                              Text("Birth",
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
@@ -205,7 +280,7 @@ class _MyAccountPage extends State<MyAccountPage> {
                                       Container(
                                           child: Row(
                                             children: <Widget> [
-                                              Text("휴대폰 번호",
+                                              Text("Phone number",
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
@@ -260,20 +335,33 @@ class _MyAccountPage extends State<MyAccountPage> {
                                                     ),
                                                   ),
                                                   Container(
-                                                      margin: EdgeInsets.only(top: 5),
 //                                  padding: EdgeInsets.only(left: 45, right: 30),
-                                                      child: Row(
-                                                        children: <Widget> [
-                                                          Text(user.MBTI,
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                              )
-                                                          ),
-                                                        ],
-                                                      )
+                                                      child: DropdownButton<String>(
+                                                        value: user.MBTI,
+                                                        icon: const Icon(Icons.arrow_downward,size: 14,),
+                                                        iconSize: 20,
+                                                        elevation: 16,
+                                                        style: const TextStyle(color: Colors.deepPurple),
+                                                        underline: Container(
+                                                          height: 2,
+                                                          color: Colors.deepPurpleAccent,
+                                                        ),
+                                                        onChanged: (String newValue) async {
+                                                          await db_update_MBTI(newValue);
+                                                          setState(() {
+                                                            user.MBTI = newValue;
+                                                          });
+                                                        },
+                                                        items: <String>['없음', 'ESTJ', 'ESTP', 'ESFP', 'ESFJ', 'ENTJ', 'ENTP', 'ENFJ', 'ENFP',
+                                                          'ISTJ', 'ISTP', 'ISFP', 'ISFJ', 'INTJ', 'INTP', 'INFJ', 'INFP']
+                                                            .map<DropdownMenuItem<String>>((String value) {
+                                                          return DropdownMenuItem<String>(
+                                                            value: value,
+                                                            child: Text(value),
+                                                          );
+                                                        }).toList(),
+                                                      ),
                                                   )
-//                                        ],
-//                                      )
                                                 ],
                                               )
                                           ),
@@ -288,7 +376,7 @@ class _MyAccountPage extends State<MyAccountPage> {
                                               child: Column(
                                                 children: <Widget> [
                                                   Container(
-                                                    child: Text("직업",
+                                                    child: Text("JOB",
                                                         style: TextStyle(
                                                           fontSize: 18,
                                                           fontWeight: FontWeight.bold,
@@ -299,15 +387,29 @@ class _MyAccountPage extends State<MyAccountPage> {
                                                   Container(
 //                                          margin: EdgeInsets.only(top: 5),
 //                                  padding: EdgeInsets.only(left: 30, right: 30),
-                                                      child: Row(
-                                                        children: <Widget> [
-                                                          Text(job[user.job],
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                              )
-                                                          ),
-                                                        ],
-                                                      )
+                                                      child: DropdownButton<String>(
+                                                        value: job[user.job],
+                                                        icon: const Icon(Icons.arrow_downward,size: 14,),
+                                                        iconSize: 20,
+                                                        elevation: 16,
+                                                        style: const TextStyle(color: Colors.deepPurple),
+                                                        underline: Container(
+                                                          height: 2,
+                                                          color: Colors.deepPurpleAccent,
+                                                        ),
+                                                        onChanged: (String newValue) async {
+                                                          await db_update_job(newValue);
+                                                          setState(() {
+                                                            user.job = job_index(newValue);
+                                                          });
+                                                        },
+                                                        items: job.map<DropdownMenuItem<String>>((String value) {
+                                                          return DropdownMenuItem<String>(
+                                                            value: value,
+                                                            child: Text(value),
+                                                          );
+                                                        }).toList(),
+                                                      ),
                                                   )
                                                 ],
                                               )
@@ -318,11 +420,11 @@ class _MyAccountPage extends State<MyAccountPage> {
                                           ),
 
                                           Container(
-                                              padding: EdgeInsets.only(left: 25, right: 25),
+                                              padding: EdgeInsets.only(left: 25, right: 15),
                                               child: Column(
                                                 children: <Widget> [
                                                   Container(
-                                                    child: Text("종교",
+                                                    child: Text("RELI",
                                                         style: TextStyle(
                                                           fontSize: 18,
                                                           fontWeight: FontWeight.bold,
@@ -331,17 +433,29 @@ class _MyAccountPage extends State<MyAccountPage> {
                                                   ),
 
                                                   Container(
-//                                          margin: EdgeInsets.only( top: 5),
-//                                  padding: EdgeInsets.only(left: 30, right: 30),
-                                                      child: Row(
-                                                        children: <Widget> [
-                                                          Text(religion[user.religion],
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                              )
-                                                          ),
-                                                        ],
-                                                      )
+                                                      child: DropdownButton<String>(
+                                                        value: religion[user.religion],
+                                                        icon: const Icon(Icons.arrow_downward,size: 14,),
+                                                        iconSize: 20,
+                                                        elevation: 16,
+                                                        style: const TextStyle(color: Colors.deepPurple),
+                                                        underline: Container(
+                                                          height: 2,
+                                                          color: Colors.deepPurpleAccent,
+                                                        ),
+                                                        onChanged: (String newValue) async {
+                                                          await db_update_job(newValue);
+                                                          setState(() {
+                                                            user.religion = religion_index(newValue);
+                                                          });
+                                                        },
+                                                        items: religion.map<DropdownMenuItem<String>>((String value) {
+                                                          return DropdownMenuItem<String>(
+                                                            value: value,
+                                                            child: Text(value),
+                                                          );
+                                                        }).toList(),
+                                                      ),
                                                   )
                                                 ],
                                               )
@@ -368,12 +482,23 @@ class _MyAccountPage extends State<MyAccountPage> {
                                       Container(
                                           child: Row(
                                             children: <Widget> [
-                                              Text("자기 소개",
+                                              Text("MY INTRODUTION",
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
                                                   )
                                               ),
+                                              Padding(padding: EdgeInsets.only(left: 5)),
+                                              IconButton(
+                                                icon: Icon(Icons.create, color: Colors.grey, size: 22),
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(builder: (context) => IntroduceEditPage(id: widget.id, comment: user.memo))
+                                                  );
+                                                }
+                                              ),
+
                                             ],
                                           )
                                       ),
@@ -443,7 +568,6 @@ class _MyAccountPage extends State<MyAccountPage> {
       ),
     );
   }
-
 }
 
 //gender, date_of_birth, email, phone_num

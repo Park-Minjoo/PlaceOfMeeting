@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:mysql1/mysql1.dart';
+import '../home_page.dart';
 import 'design_course_app_theme.dart';
 
 class BoardPage extends StatefulWidget {
   final int room_id;
-  BoardPage({Key key, @required this.room_id}) : super(key: key);
+  int id;
+  BoardPage({Key key, @required this.room_id,  @required this.id}) : super(key: key);
 
   @override
   _BoardPageState createState() => _BoardPageState();
@@ -76,6 +78,23 @@ class _BoardPageState extends State<BoardPage>
     // print(title_set.length + " " + count_set.length + " " + des_set.length + " " + date_)
   }
 
+  Future joinRoom(int uid, int room_id) async {
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting',
+        password: 'databaseproject'
+    ));
+    var results = await conn.query(
+      'insert into room_people values (?, ?)', [uid, room_id]);
+
+    for(var col in results){
+      print(col);
+    }
+
+    conn.close();
+  }
   final Future<String> _calculation = Future<String>.delayed(
     const Duration(seconds: 2),
         () => 'Data Loaded',
@@ -95,6 +114,10 @@ class _BoardPageState extends State<BoardPage>
 
   @override
   Widget build(BuildContext context) {
+    // int uid;
+    // uid = widget.id;
+    // int room_id;
+    // room_id = widget.room_id;
     // print("room id: " + widget.room_id.toString());
     // print("room title: " + title_set[0].toString());
     // print("room count: " + count_set[0].toString());
@@ -283,17 +306,28 @@ class _BoardPageState extends State<BoardPage>
                                                 ],
                                               ),
                                               child: Center(
-                                                child: Text(
-                                                  'Join Room',
-                                                  textAlign: TextAlign.left,
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.w600,
-                                                    fontSize: 18,
-                                                    letterSpacing: 0.0,
-                                                    color: DesignCourseAppTheme
-                                                        .nearlyWhite,
+                                                child: TextButton(
+                                                  onPressed: () async{
+                                                    print("dddd");
+                                                    var results = await joinRoom(widget.id, widget.room_id);
+
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(builder: (context) => HomePage(id: widget.id))
+                                                    );
+                                                  }, // 버튼 클릭 시 이벤트
+                                                  child: Text(
+                                                    'Join Room',
+                                                    textAlign: TextAlign.left,
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.w600,
+                                                      fontSize: 18,
+                                                      letterSpacing: 0.0,
+                                                      color: DesignCourseAppTheme
+                                                          .nearlyWhite,
+                                                    ),
                                                   ),
-                                                ),
+                                                )
                                               ),
                                             ),
                                           )

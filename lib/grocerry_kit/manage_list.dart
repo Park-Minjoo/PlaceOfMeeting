@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/grocerry_kit/manage_one.dart';
 import 'package:mysql1/mysql1.dart';
 import 'model/product_model.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
@@ -39,7 +40,7 @@ class ManageList extends StatefulWidget {
 class Manage{
   String title;
   String description;
-  double count;
+  int count;
 
   Manage(this.title, this.description, this.count);
 }
@@ -100,9 +101,9 @@ class _ManageListState extends State<ManageList>{
           List<Widget> children;
           if(snapshot.hasData){
             children = <Widget>[
-              SizedBox(height: 30),
+              SizedBox(height: 23),
               Text(
-                  'Managing',
+                  'Manage My Own Room',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -110,7 +111,7 @@ class _ManageListState extends State<ManageList>{
                   ),
                   textAlign: TextAlign.center,
               ),
-              _myList(num, _list),
+              _myList(num, _list, uid),
             ];
           }else if (snapshot.hasError) {
             children = <Widget>[
@@ -154,14 +155,7 @@ class _ManageListState extends State<ManageList>{
   }
 }
 
-//   body: _myList(n),
-
-/*FutureBuilder<String>(
-          future: _calculation, // a previously-obtained Future<String> or null
-          builder:
-      ),*/
-
-Widget _myList(int n, List<Manage> mlist){
+Widget _myList(int n, List<Manage> mlist, int uid){
   if(n==0){
     return Container(
       child: Column(
@@ -185,7 +179,7 @@ Widget _myList(int n, List<Manage> mlist){
           height: 75,
           color: index % 2 == 0 ? Colors.green : Colors.green[200],
           child: ListTile(
-            leading: const Icon(Icons.star, color: Colors.amberAccent),
+            leading: Icon(Icons.star, color: Colors.amberAccent),
             title: Text(
               '${mlist[index].title}',
               style: TextStyle(
@@ -207,7 +201,13 @@ Widget _myList(int n, List<Manage> mlist){
               ),
             ),
             trailing: IconButton(
-              icon: Icon(Icons.add),
+              icon: Icon(Icons.people_alt_outlined, color: Colors.white, size: 35),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ManageOne(id: uid))
+                );
+              }
             ),
           ),
         );
@@ -236,85 +236,3 @@ Widget _buildAppBar(context) {
     ),
   );
 }
-
-
-/*
-  @override
-  List<ChatUsers> chatUsers = [
-    ChatUsers(name: "롤", room_ex: "매일 밤 열한시", imageURL: "images/userImage1.jpeg"),
-    ChatUsers(name: "오버워치", room_ex: "금요일 밤", imageURL: "images/userImage2.jpeg"),
-    ChatUsers(name: "A", room_ex: "AAA", imageURL: "images/userImage3.jpeg"),
-    ChatUsers(name: "B", room_ex: "BBB", imageURL: "images/userImage4.jpeg"),
-    ChatUsers(name: "C", room_ex: "CCC", imageURL: "images/userImage5.jpeg"),
-
-
-
-  Widget build(BuildContext context) {
-  // final HtoMArg args = ModalRoute.of(context).settings.arguments;
-  // chatUsers.add(ChatUsers(name: 'name', room_ex: 'room_ex', imageURL: 'imageURL'));
-    return Scaffold (
-      appBar: _buildAppBar(context),
-      body: Container(
-        color: const Color(0xffF4F7FA),
-        child: ListView(
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(left: 16, top: 20),
-                  child: Text(
-                    '                       My Own Rooms',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 50),
-            _buildChatList(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildChatList() {
-    //var items = ChatUsers();
-    return Container (
-      height: 700,
-      alignment: Alignment.topLeft,
-      child: ListView.builder (
-        shrinkWrap: true,
-        //physics: ClampingScrollPhysics(),
-        scrollDirection: Axis.vertical,
-        itemCount: chatUsers.length, // 채팅방 수
-        itemBuilder: (context, index) {
-          //var data = items[index];
-          return  ChatRoomList(
-            name: chatUsers[index].name,
-            room_ex: chatUsers[index].room_ex,
-            imageUrl: chatUsers[index].imageURL,
-          );
-        },
-      ),
-    );
-  }
-
-
-
-class ChatRoomList extends StatefulWidget{
-  String name; // 방제목
-  String room_ex; // 방 설명
-  String imageUrl; //Icon icon_name; // 아이콘이나 이미지
-  // String time;
-  // bool isMessageRead;
-  ChatRoomList({@required this.name,@required this.room_ex,@required this.imageUrl/*,@required this.time,@required this.isMessageRead*/});
-  @override
-  _ManageListState createState() => _ManageListState();
-}
-
-*/

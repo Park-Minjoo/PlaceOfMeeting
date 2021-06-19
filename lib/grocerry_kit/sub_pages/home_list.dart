@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/grocerry_kit/home_page.dart';
-import 'package:flutter_widgets/grocerry_kit/make_room.dart';
+import 'package:flutter_widgets/grocerry_kit/board_pages/board_room.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:flutter/widgets.dart';
 import '../category/category_detail.dart';
@@ -10,13 +9,25 @@ import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 //https://medium.com/flutter-community/building-a-chat-app-with-flutter-and-firebase-from-scratch-9eaa7f41782e
 // 여기 참고해서 DB랑 연결 시 코드 변경경
 
-class HomeList extends StatelessWidget {
+
+class HomeList extends StatefulWidget {
   final int id;
   HomeList({Key key, @required this.id}) : super(key:key);
 
   @override
+  State<StatefulWidget> createState() {
+    return _HomeListState();
+  }
+}
+
+class _HomeListState extends State<HomeList> {
+  @override
   Widget build(BuildContext context) {
-//    room_list();
+    // Future load_db() async{
+    //   await room_list();
+    // }
+    // load_db();
+    room_list();
     return Scaffold(
       body: Container(
         color: const Color(0xffF4F7FA),
@@ -55,26 +66,15 @@ class HomeList extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding:EdgeInsets.only(right: 20),
-                  child: FloatingActionButton(
-                      backgroundColor: Colors.green,
-                      child: Icon(
-                        Icons.add,
-                        color: Colors.white,
-                        size: 33,
-                      ),
-                      onPressed: () {
-                        print(id);
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => makeRoomPage(id: id))
-                        );
-                      }
-                  ),
-                )
+                IconButton(
+                    onPressed: (){
+                      Navigator.pushNamed(context, '/grocerry/makeroom');
+                    },
+                    icon: Icon(Icons.add_circle_outlined)
+                ),
               ],
             ),
+            // TODO 퓨처빌더로 감싸기
             _buildChatList(), // 리얼 아이템 나열한 친구
           ],
         ),
@@ -105,11 +105,9 @@ class HomeList extends StatelessWidget {
                 iconSize: 45,
                 color: Colors.black38,
                 onPressed: (){
-                  print(index);
-//                  Navigator.pushNamed(context, '/grocerry/category_detail', arguments: data);
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => CategoryDetailPage(category_id: index))
+                      MaterialPageRoute(builder: (context) => CategoryDetailPage(category_id: index, id: widget.id))
                   );
                 },
               ),
@@ -154,6 +152,7 @@ class HomeList extends StatelessWidget {
     count_set.clear();
     roomId_set.clear();
     real_room_cnt = room_info.length;
+
     for(var row in room_info){
       //print(row[0].toString() +" "+row[1]+" "+row[2].toString() + " "+ row[3].toString());
       category_set.add(row[0].toInt());
@@ -167,7 +166,6 @@ class HomeList extends StatelessWidget {
 
   Widget _buildChatList() {
     //var items = ChatUsers();
-
     //room_list();
     print('real_count: ${real_room_cnt}');
     return Container(
@@ -196,18 +194,27 @@ class HomeList extends StatelessWidget {
   List<Product> CategoryList() {
     var list = List<Product>();
 
-    list.add(new Product('Sports', Icons.sports_basketball_outlined));
-    list.add(new Product('Game', Icons.videogame_asset_outlined));
-    list.add(new Product('Music', Icons.music_video));
-    list.add(new Product('Study', Icons.menu_book_outlined));
-    list.add(new Product('Food', Icons.fastfood));
-    list.add(new Product('Friends', Icons.wc));
-    list.add(new Product('Etc', Icons.video_collection_outlined));
+    var data0 = Product('Sports', Icons.sports_basketball_outlined);
     // 이름, 이미지를 넣을 수 있다.
+    list.add(data0);
+    var data1 = Product('Game', Icons.videogame_asset_outlined);
+    list.add(data1);
+    var data2 = Product('Music', Icons.music_video);
+    list.add(data2);
+    var data3 = Product('Study', Icons.menu_book_outlined);
+    list.add(data3);
+    var data4 = Product('Food', Icons.fastfood);
+    list.add(data4);
+    var data5 = Product('Friends', Icons.wc);
+    list.add(data5);
+    var data6 = Product('Book', Icons.library_books);
+    list.add(data6);
+    var data7 = Product('Etc', Icons.video_collection_outlined);
+    list.add(data7);
+
 
     return list;
   }
-
 }
 
 class ChatRoomList extends StatefulWidget{
@@ -252,6 +259,18 @@ class _ChatRoomListState extends State<ChatRoomList> {
                         ],
                       ),
                     ),
+                  ),
+                  IconButton(
+                      icon: Icon(Icons.search, size: 30, color: Colors.lime),
+                      onPressed:(){
+                        // print(widget.room_id);
+                        // print(widget.room_ex);
+                        // Navigator.pushNamed(context, '/grocerry/board');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => BoardPage(room_id: widget.roomID))
+                        );
+                      }
                   ),
                 ],
               ),
