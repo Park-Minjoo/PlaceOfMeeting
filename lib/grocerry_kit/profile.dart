@@ -80,15 +80,15 @@ class _ProfileList extends State<ProfileList> {
                   if(snapshot.hasData){
                     children = <Widget>[
                       SizedBox(height: 23),
-                      Text(
-                        'Manage My Own Room',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
+                      // Text(
+                      //   'Manage My Own Room',
+                      //   style: TextStyle(
+                      //     fontSize: 20,
+                      //     fontWeight: FontWeight.bold,
+                      //     color: Colors.black,
+                      //   ),
+                      //   textAlign: TextAlign.center,
+                      // ),
                       _myList(num, _list, uid),
                     ];
                   }else if (snapshot.hasError) {

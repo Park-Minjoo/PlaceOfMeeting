@@ -28,9 +28,19 @@ class _SignupPageState extends State<SignupPage> {
   final dateController = TextEditingController();
   final emailController = TextEditingController();
   final phoneController = TextEditingController();
+  final adressController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   final _item = ['Man', 'Woman'];
+  final _majorItem = ['NULL','Business', 'Economics', 'Computer Science', 'English', 'Psychology', 'Law', 'Music', 'Electron'];
+  final _nationItem = ['Korea','NULL'];
+  final _cityItem = ['Pohang','Seuol','Yangju','Daegu', 'Goyang', 'Busan'];
   var _selected = 'Man';
+  var _major1 = 'NULL';
+  var _major2 = 'NULL';
+  var _nation = 'Korea';
+  var _city = 'Pohang';
+
+
   bool _dupcheck = false;
 
   Future<int> checkdup(TextEditingController id) async {
@@ -65,11 +75,45 @@ class _SignupPageState extends State<SignupPage> {
         password: 'databaseproject'
         ));
 
-    print('dddddddd');
-
     var result = await conn.query(
          'insert into login_info values (?, ?, ?, ?, ?, ?, ?)',
           [0, gender=='Man'? 1 : 0, date.text, id.text, pwd.text, email.text, pnum.text]
+    );
+
+    conn.close();
+  }
+
+  Future majorIn(String m1, String m2) async{
+
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting'  ,
+        password: 'databaseproject'
+    ));
+
+    var result = await conn.query(
+        'insert into major values (?, ?, ?)',
+        [0, m1, m2]
+    );
+
+    conn.close();
+  }
+
+  Future residenceIn(String nation, String city, TextEditingController adress) async{
+
+    final conn = await MySqlConnection.connect(ConnectionSettings(
+        host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
+        port: 3306,
+        user: 'rootuser',
+        db: 'placeofmeeting'  ,
+        password: 'databaseproject'
+    ));
+
+    var result = await conn.query(
+        'insert into residence values (?, ?, ?, ?)',
+        [0, nation, city, adress.text]
     );
 
     conn.close();
@@ -92,11 +136,11 @@ class _SignupPageState extends State<SignupPage> {
           elevation: 0,
           backgroundColor: Colors.white,
         ),
-        body: ListView(
+        body:
+        ListView(
           key: _formKey,
           children: <Widget>[
             Container(
-              height: 850,
               decoration: BoxDecoration(
                   boxShadow: [
                     new BoxShadow(
@@ -110,8 +154,8 @@ class _SignupPageState extends State<SignupPage> {
                       bottomLeft: Radius.circular(32),
                       bottomRight: Radius.circular(32))),
               alignment: Alignment.topCenter,
-
-              child: Column(
+              child: Expanded(
+                child:Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
@@ -334,6 +378,126 @@ class _SignupPageState extends State<SignupPage> {
                         ),
                       ),
                     ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 23, right: 16, top: 8, bottom: 0),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Major1       ',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                          ),
+                          DropdownButton(
+                            value: _major1,
+                            items: _majorItem.map(
+                                    (value){
+                                  return DropdownMenuItem(
+                                    value: value,
+                                    child: Text(value),
+                                  );
+                                }
+                            ).toList(),
+                            onChanged: (value){
+                              setState(() {
+                                _major1 = value;
+                              });
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 23, right: 16, top: 0, bottom: 0),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Major2       ',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                          ),
+                          DropdownButton(
+                            value: _major2,
+                            items: _majorItem.map(
+                                    (value){
+                                  return DropdownMenuItem(
+                                    value: value,
+                                    child: Text(value),
+                                  );
+                                }
+                            ).toList(),
+                            onChanged: (value){
+                              setState(() {
+                                _major2 = value;
+                              });
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 23, right: 16, top: 0, bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Nation      ',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                          ),
+                          DropdownButton(
+                            value: _nation,
+                            items: _nationItem.map(
+                                    (value){
+                                  return DropdownMenuItem(
+                                    value: value,
+                                    child: Text(value),
+                                  );
+                                }
+                            ).toList(),
+                            onChanged: (value){
+                              setState(() {
+                                _nation = value;
+                              });
+                            },
+                          ),
+                          SizedBox(width: 40),
+                          Text(
+                            'City     ',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                          ),
+                          DropdownButton(
+                            value: _city,
+                            items: _cityItem.map(
+                                    (value){
+                                  return DropdownMenuItem(
+                                    value: value,
+                                    child: Text(value),
+                                  );
+                                }
+                            ).toList(),
+                            onChanged: (value){
+                              setState(() {
+                                _city = value;
+                              });
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                      EdgeInsets.only(left: 16, right: 16, top: 0, bottom: 8),
+                      child: TextField(
+                        controller: adressController,
+                        style: TextStyle(fontSize: 18),
+                        keyboardType: TextInputType.text,
+                        decoration: InputDecoration(
+                          hintText: 'Adress Detail',
+                          enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide(color: Colors.grey)),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide(color: Colors.grey)),
+                        ),
+                      ),
+                    ),
                     Align(
                         alignment: Alignment.centerRight,
                         child: Container(
@@ -355,7 +519,9 @@ class _SignupPageState extends State<SignupPage> {
                                 else flag = 100;
                               });
                               if(flag == 100 && _dupcheck){
-                                main(idController, pwdController, nameController, dateController,_selected, emailController, phoneController);
+                                main(idController, pwdController, nameController, dateController, _selected, emailController, phoneController);
+                                majorIn(_major1, _major2);
+                                residenceIn(_nation, _city, adressController);
                                 Navigator.pushNamed(context, '/');
                               }
                               else if(_dupcheck == false){
@@ -386,8 +552,9 @@ class _SignupPageState extends State<SignupPage> {
                         )),
                   ],
               ),
-            ),
+            ))
           ],
-        ));
+        )
+    );
   }
 }

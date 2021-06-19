@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #Sat Jun 19 21:52:27 KST 2021
 base.0=/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/transforms/dexMerger/debug/0
+=======
+#Sat Jun 19 21:14:38 KST 2021
+base.1=C\:\\Users\\audwn\\StudioProjects\\Flutter-UI-Kits\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> 896c5b6c09c967ef379c69c977f4f1c6c84b8323
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex

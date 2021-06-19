@@ -201,13 +201,13 @@ class _HomeListState extends State<HomeList> {
     list.add(data1);
     var data2 = Product('Music', Icons.music_video);
     list.add(data2);
-    var data3 = Product('Study', Icons.menu_book_outlined);
+    var data3 = Product('Study', Icons.edit_rounded);
     list.add(data3);
     var data4 = Product('Food', Icons.fastfood);
     list.add(data4);
     var data5 = Product('Friends', Icons.wc);
     list.add(data5);
-    var data6 = Product('Book', Icons.library_books);
+    var data6 = Product('Book', Icons.menu_book_rounded);
     list.add(data6);
     var data7 = Product('Etc', Icons.video_collection_outlined);
     list.add(data7);
