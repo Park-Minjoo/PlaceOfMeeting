@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
+import 'board_pages/board_room.dart';
 import 'model/product_model.dart';
 import 'package:flutter_widgets/utils/cart_icons_icons.dart';
 
 class MyRoomList extends StatelessWidget {
-
+  int id;
   Map<Map<String,int>, int> room_info = new Map<Map<String,int>, int>() ;
 
   // final Map<String, int> title_count_set = new Map<String,int>();
@@ -23,7 +24,7 @@ class MyRoomList extends StatelessWidget {
     ));
 
     var results = await conn.query(
-        'select title, count from rooms where selected = 1'
+        'SELECT title, count FROM rooms, room_people WHERE room_people.room_id = rooms.room_id AND room_people.ID = ?', [id]
     );
 
     if(results.isNotEmpty){
@@ -61,7 +62,7 @@ class MyRoomList extends StatelessWidget {
                     onPressed: () async{
                       title_set.clear();
                       count_set.clear();
-                      await getChat();
+                     await getChat();
                     },
                     child: Text(
                       'View All',
@@ -115,17 +116,19 @@ class Users{
   String name;
   String room_ex;
   String imageURL;
-  Users({@required this.name,@required this.room_ex,@required this.imageURL});
+  String id;
+  Users({@required this.name,@required this.room_ex,@required this.imageURL, @required this.id});
 }
 
 class RoomList extends StatefulWidget{
   String name; // 방제목
   String room_ex; // 방 설명
   String imageUrl; //Icon icon_name; // 아이콘이나 이미지
+  String id;
 
   // String time;
   // bool isMessageRead;
-  RoomList({@required this.name,@required this.room_ex,@required this.imageUrl/*,@required this.time,@required this.isMessageRead*/});
+  RoomList({@required this.name,@required this.room_ex,@required this.imageUrl, @required this.id/*,@required this.time,@required this.isMessageRead*/});
   @override
   _RoomListState createState() => _RoomListState();
 }
@@ -162,6 +165,18 @@ class _RoomListState extends State<RoomList> {
                       ),
                     ),
                   ),
+                  // IconButton(
+                  //     icon: Icon(Icons.search, size: 30, color: Colors.lime),
+                  //     onPressed:(){
+                  //       // print(widget.room_id);
+                  //       // print(widget.room_ex);
+                  //       // Navigator.pushNamed(context, '/grocerry/board');
+                  //       Navigator.push(
+                  //           context,
+                  //           MaterialPageRoute(builder: (context) => BoardPage(room_id: widget.id))
+                  //       );
+                  //     }
+                  // ),
                 ],
               ),
             ),

@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
         '/grocerry/home': (context) => HomePage(),
         '/grocerry/cart': (context) => CartPage(),
         '/grocerry/room': (context) => MyRoomList(),
-        '/grocerry/profile': (context) => MyChatRoomList(),
+        // '/grocerry/profile': (context) => MyChatRoomList(),
         '/grocerry/board' : (context) => BoardPage(),
 //           '/grocerry/sub_pages/home_list': HomeList(),
         //   '/grocerry/study': (context) => StudyPage(),

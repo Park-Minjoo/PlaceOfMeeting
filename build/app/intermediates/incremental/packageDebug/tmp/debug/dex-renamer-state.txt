@@ -1,4 +1,4 @@
-#Sun Jun 13 20:30:54 KST 2021
+#Sat Jun 19 19:18:49 KST 2021
 base.0=/Users/minjoo/Desktop/PlaceOfMeeting/build/app/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex
